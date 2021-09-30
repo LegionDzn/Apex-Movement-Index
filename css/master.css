@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+  font-family: roboto;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  width: 100%;
+}
+#primarycontainer{
+  display: flex;
+  flex-direction:row;
+  margin-bottom: 1.535em;
+
+}
+iframe{
+  border: none;
+}
+
+div.br{
+  width: calc(100% - .4em);
+  height: 1px;
+  background: black;
+  text-align: center;
+  margin: auto;
+  margin-top: .4em;
+  display: inline-block;
+
+  margin-bottom: .4em;
+
+}
+#Main{
+  overflow: scroll;
+width: -webkit-fill-available;
+min-height: min-content;
+align-self: flex-end;
+overflow: auto;
+  margin-top: 1.535em;
+  align-self: flex-start;
+  margin-left: 1.3em;
+  margin-right: 1.3em;
+}
+img {
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: -1;
+}
+
+.header {
+  margin-left: .2em;
+  font-size: 17.5pt;
+  font-family: roboto;
+  font-weight: 600;
+}
+
+.PriText{
+  font-size: 12pt;
+  flex-shrink: 999999;
+}
+.Priflex {
+    width: -webkit-fill-available;
+    min-height: 10px;
+    margin-left: .4em;
+    margin-right: .4em;
+    flex-wrap: nowrap;
+    border: 0px !important;
+}
+.subheader {
+  margin-left: .2em;
+  font-size: 13.5pt;
+  font-family: roboto;
+  font-weight: 500;
+}
+.VidCont:hover{
+  transform: scale(1.4);
+transform-origin: top right;
+}
+
+.VidCont{
+  float: right;
+width: calc(1920px * 0.3);
+height: calc(1080px * 0.3);
+background: red;
+}
+#credits {
+  font-size: 10pt;
+}
+
+#TocList {
+  font-size: 10pt;
+  list-style-type: none;
+  padding-bottom: 1em;
+}
+
+#TocList>* {
+  width: 80%;
+}
+
+a {
+  text-decoration: none;
+}
+
+a {
+  color: #3d477a;
+}
+
+/* Unvisited link  */
+a:visited {
+  color: #3d477a;
+}
+
+/* Visited link    */
+a:hover {
+  color: #3d477a;
+  text-decoration: underline;
+}
+
+/* Mouse over link */
+#ToC {
+  width: 16.75em;
+  height: 60em;
+  overflow: scroll;
+  margin-left: 1.3em;
+  overflow-x: hidden;
+  /* Hide vertical scrollbar */
+  margin-top: 1.535em;
+}
+
+.container {
+  background-color: rgba(220, 220, 220, 1);
+  border: 1px solid black;
+}
+
+li span {
+  position: relative;
+  left: .5em;
+}
+
+.tabbed1x {
+  margin-left: 1.3em;
+}
+
+.tabbed2x {
+  margin-left: 2.6em;
+}
+
+.tabbed3x {
+  margin-left: 3.9em;
+}
+
+.tabbed4x {
+  margin-left: 4.8em;
+}
