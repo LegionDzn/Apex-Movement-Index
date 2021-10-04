@@ -54,13 +54,13 @@ img {
 
 .header {
   margin-left: .2em;
-  font-size: 17.5pt;
+  font-size: 1.458em;
   font-family: roboto;
   font-weight: 600;
 }
 
 .PriText{
-  font-size: 12pt;
+  font-size: 1em;
   flex-shrink: 999999;
 }
 .Priflex {
@@ -73,14 +73,15 @@ img {
 }
 .subheader {
   margin-left: .2em;
-  font-size: 13.5pt;
+  font-size: 1.125em;
   font-family: roboto;
   font-weight: 500;
 }
-.VidCont:hover{
-  transform: scale(1.4);
+/* .VidCont:hover{
+  transform: scale(2);
+  z-index: 99;
 transform-origin: top right;
-}
+} */
 
 .VidCont{
   float: right;
@@ -89,11 +90,11 @@ height: calc(1080px * 0.3);
 background: red;
 }
 #credits {
-  font-size: 10pt;
+  font-size: 0.83em;
 }
 
 #TocList {
-  font-size: 10pt;
+  font-size: 0.83em;
   list-style-type: none;
   padding-bottom: 1em;
 }
