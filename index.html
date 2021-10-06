@@ -22,12 +22,7 @@
         <li><span><a onclick="switchpage('Content/holstering.html')" href="#">
               •Holstering and it's Importance</a></span></li>
 
-
         <p class="subheader">Movement Tech</p>
-
-
-
-
 
         <li><span><a onclick="switchpage('Content/fallstuncancel.html')" href="#">
               •Fall Stun Cancel</a></span></li>
@@ -45,9 +40,6 @@
 
         <li class="tabbed1x"><span><a onclick="switchpage('Content/ledgeslide.html')" href="#">
               •Ledge Slide</a></span></li>
-
-        <li class="tabbed2x"><span><a onclick="switchpage('Content/directionalledgeslide.html')" href="#">
-              •Directional Ledge Slide</a></span></li>
 
         <li class=""><span><a onclick="switchpage('Content/edgeboost.html')" href="#">
               •Edgeboost</a></span></li>
@@ -183,14 +175,31 @@
       </ul>
     </div>
 
-    <div id="Main" class="container">
-      <iframe id="Iframe" src="Content/introduction.html" width="100%" height="958em"></iframe>
+    <div id="Main" class="container" style="height: 10px">
+      <iframe id="Iframe" src="Content/introduction.html" width="100%" height="min-content;"></iframe>
     </div>
     <script type="text/javascript">
       function switchpage(url) {
         document.getElementById("Iframe").src = url;
         console.log(url);
       }
+    </script>
+    <script type="text/javascript">
+    window.onload = doALoadOfStuff;
+
+    window.onresize = doALoadOfStuff;
+
+    function doALoadOfStuff() {
+      let box = document.querySelector('#ToC');
+      console.log(box);
+      let height = box.clientHeight;
+      console.log(height);
+      document.getElementById("Main").style.height = height +"px";
+      document.getElementById("Iframe").style.height = height -4 +"px";
+
+    }
+
+
     </script>
 </body>
 

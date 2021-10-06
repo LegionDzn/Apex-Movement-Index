@@ -12,8 +12,11 @@ body {
 #primarycontainer{
   display: flex;
   flex-direction:row;
-  margin-bottom: 1.535em;
-
+  margin: auto;
+  width: 98%;
+height: 96%;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
 }
 iframe{
   border: none;
@@ -37,10 +40,8 @@ width: -webkit-fill-available;
 min-height: min-content;
 align-self: flex-end;
 overflow: auto;
-  margin-top: 1.535em;
   align-self: flex-start;
   margin-left: 1.3em;
-  margin-right: 1.3em;
 }
 img {
   margin: 0px;
@@ -125,12 +126,9 @@ a:hover {
 /* Mouse over link */
 #ToC {
   width: 16.75em;
-  height: 60em;
   overflow: scroll;
-  margin-left: 1.3em;
   overflow-x: hidden;
   /* Hide vertical scrollbar */
-  margin-top: 1.535em;
 }
 
 .container {
