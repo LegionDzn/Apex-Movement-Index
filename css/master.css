@@ -46,7 +46,6 @@ div.br {
 }
 
 #Main {
-  transition: .25s;
   overflow: scroll;
   width: -webkit-fill-available;
   align-self: flex-end;
