@@ -6,10 +6,11 @@
   <title>Apex Movement Index</title>
   <link rel="stylesheet" href="css/master.css">
   <link rel="stylesheet" href="css/dark.css">
-  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
 </head>
 
 <body id="bodytoggle" class="light">
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 
   <div id="primarycontainer">
     <div class="container ToC" id="ToC">
@@ -185,7 +186,7 @@
 
         <li><span>
             <p>
-              V0.39</p>
+              V0.40</p>
           </span></li>
       </ul>
     </div>
@@ -223,10 +224,10 @@
       function switchpage(url) {
         document.getElementById("Iframe").style.display = "none";
 
-          document.getElementById("Iframe").src = url;
-          globalThis.yourGlobalVariable = url;
-          console.log(yourGlobalVariable);
-          setTimeout(function() {
+        document.getElementById("Iframe").src = url;
+        globalThis.yourGlobalVariable = url;
+        console.log(yourGlobalVariable);
+        setTimeout(function() {
           document.getElementById("Iframe").style.display = "block";
           FixTheme();
 
@@ -241,26 +242,8 @@
         $('#bodytoggle').toggleClass('light dark');
         $("iframe").contents().find("#bodytoggle").toggleClass('light dark');
       });
-
-
-      $(".player").each(function (videoIndex) {
-
-   var videoId = $(this).attr("id");
-
-   videojs(videoId).ready(function(){
-       this.on("play", function(e) {
-           //pause other video
-           $(".video-js").each(function (index) {
-               if (videoIndex !== index) {
-                   this.player.pause();
-               }
-           });
-       });
-
-   });
-});
-
     </script>
+
 </body>
 
 </html>
