@@ -3,43 +3,44 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Air Strafing - Apex Movement Index</title>
+  <title>AirStrafe - Apex Movement Index</title>
   <link rel="stylesheet" href="../css/master.css">
-</head>
+  <link rel="stylesheet" href="../css/dark.css">
+  <style>
+    body {
+      background-color: var(--secondary-bg-color)}
+  </style>
 
-<body>
-  <p style="display:inline;" class="header">Air Strafing</p>
-  <!-- <p style="color: firebrick; display:inline;"class="header">Deprecated </p> -->
-  <div style="margin-top: 0em;" class="br"></div>
-  <div id="flex1" class="Priflex container">
-    <div style="background: red;" class="VidCont">
-       <video width="100%" height="100%" autoplay loop controls muted>
+</head>
+<body id="bodytoggle" class="light">      <p style="display:inline;"class="header">AirStrafe</p>
+      <!-- <p style="color: firebrick; display:inline;"class="header">Deprecated </p> -->
+        <!-- <p style="color: gray; display:inline; font-size: 1em"class="header">AKA. Wall Jump</p> -->
+      <div style="margin-top: 0em;" class="br"></div>
+      <div id="flex1" class="Priflex containerbutbetter">
+        <div style="background: red;" class="VidCont">
+       <video width="100%" height="100%" controls loop onmouseover="this.play()" onmouseout="this.pause();" >
          <source src="videos/airstrafe.mp4" type="video/mp4" />
          Your browser does not support the video tag.
        </video>
-    </div>
-    <div class="PriText">
+        </div>
+        <div class="PriText">
+          <p><h3>Basic AirStrafe</h3> </p> </div>
 
-      <p><h3>Basic Air Strafe</h3>
-      </p>
+        </div>
+      </div>
 
-    </div>
-  </div>
+      <div class="br"></div>
 
-  <div class="br"></div>
-
-  <div id="flex2" class="Priflex container">
-    <div style="background: blue;" class="VidCont">
-       <video width="100%" height="100%" autoplay loop controls muted>
-         <!-- <source src="videos/AirStrafe.mp4" type="video/mp4" /> -->
+      <div id="flex2" class="Priflex containerbutbetter">
+        <div style="background: blue;" class="VidCont">
+       <video width="100%" height="100%" controls loop onmouseover="this.play()" onmouseout="this.pause();" >
+         <source src="videos/edgeboost2.mp4" type="video/mp4" />
          Your browser does not support the video tag.
        </video>
-    </div>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </div>
+        <div class="PriText">
+ <p><h3>lourem ispum</h3> </p> </div>
 
-
-    </p>
-  </div>
-</body>
-
+        </div>
+  </body>
 </html>

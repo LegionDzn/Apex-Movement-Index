@@ -4,25 +4,36 @@
   font-family: roboto;
   margin: 0px;
   padding: 0px;
+  background-color: unset;
+}
+
+.containerbutbetter {
+  background-color: var(--secondary-bg-color)
 }
 
 body {
   width: 100%;
+  background-color: var(--main-bg-color);
 }
-#primarycontainer{
+
+#primarycontainer {
   display: flex;
-  flex-direction:row;
+  flex-direction: row;
   margin: auto;
   width: 98%;
-height: 96%;
+  height: 96%;
   position: absolute;
-  top: 0; left: 0; bottom: 0; right: 0;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
 }
-iframe{
+
+iframe {
   border: none;
 }
 
-div.br{
+div.br {
   width: calc(100% - .4em);
   height: 1px;
   background: black;
@@ -30,19 +41,20 @@ div.br{
   margin: auto;
   margin-top: .4em;
   display: inline-block;
-
   margin-bottom: .4em;
-
 }
-#Main{
+
+#Main {
+  transition: .33s;
   overflow: scroll;
-width: -webkit-fill-available;
-min-height: min-content;
-align-self: flex-end;
-overflow: auto;
+  width: -webkit-fill-available;
+  align-self: flex-end;
+  overflow: auto;
   align-self: flex-start;
   margin-left: 1.3em;
 }
+
+
 img {
   margin: 0px;
   padding: 0px;
@@ -53,6 +65,10 @@ img {
   z-index: -1;
 }
 
+p, .PriText {
+  color: var(--text-color)
+}
+
 .header {
   margin-left: .2em;
   font-size: 1.458em;
@@ -60,36 +76,33 @@ img {
   font-weight: 600;
 }
 
-.PriText{
-  font-size: 1em;
-  flex-shrink: 999999;
-}
 .Priflex {
-    width: -webkit-fill-available;
-    min-height: 10px;
-    margin-left: .4em;
-    margin-right: .4em;
-    flex-wrap: nowrap;
-    border: 0px !important;
+  width: -webkit-fill-available;
+  min-height: 10px;
+  margin-left: .4em;
+  margin-right: .4em;
+  flex-wrap: nowrap;
+  border: 0px !important;
 }
+
 .subheader {
   margin-left: .2em;
   font-size: 1.125em;
   font-family: roboto;
   font-weight: 500;
 }
+
 /* .VidCont:hover{
   transform: scale(2);
   z-index: 99;
 transform-origin: top right;
 } */
-
-.VidCont{
+.VidCont {
   float: right;
-width: calc(1920px * 0.3);
-height: calc(1080px * 0.3);
-background: red;
+  width: calc(1920px * 0.3);
+  height: calc(1080px * 0.3);
 }
+
 #credits {
   font-size: 0.83em;
 }
@@ -109,17 +122,17 @@ a {
 }
 
 a {
-  color: #3d477a;
+  color: var(--link-color);
 }
 
 /* Unvisited link  */
 a:visited {
-  color: #3d477a;
+  color: var(--link-color);
 }
 
 /* Visited link    */
 a:hover {
-  color: #3d477a;
+  color: var(--link-color);
   text-decoration: underline;
 }
 
@@ -132,8 +145,8 @@ a:hover {
 }
 
 .container {
-  background-color: rgba(220, 220, 220, 1);
   border: 1px solid black;
+  background-color: var(--secondary-bg-color);
 }
 
 li span {

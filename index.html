@@ -5,9 +5,11 @@
   <meta charset="utf-8">
   <title>Apex Movement Index</title>
   <link rel="stylesheet" href="css/master.css">
+  <link rel="stylesheet" href="css/dark.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body id="bodytoggle" class="light">
 
   <div id="primarycontainer">
     <div class="container ToC" id="ToC">
@@ -79,8 +81,8 @@
         <li><span><a onclick="switchpage('Content/b-hopping.html')" href="#">
               •B-hopping</a></span></li>
 
-              <li><span><a onclick="switchpage('Content/boopglitch.html')" href="#">
-                    •Boopglitch</a></span></li>
+        <li><span><a onclick="switchpage('Content/boopglitch.html')" href="#">
+              •Boopglitch</a></span></li>
 
         <li><span><a onclick="switchpage('Content/edgebug.html')" href="#">
               •Edgebug</a></span></li>
@@ -174,35 +176,62 @@
         <li class="tabbed1x"><span><a onclick="switchpage('Content/passive.html')" href="#">
               •Passive</a></span></li>
 
-        <p id="credits">Created By Legion#0567</p>
+        <li><span>
+            <p>
+              Created By Legion#0567</p>
+          </span></li>
+        <li class="tabbed1x lightswitch"><span><a href="#">
+              •Toggle Dark Mode</a></span></li>
       </ul>
     </div>
 
-    <div id="Main" class="container" style="height: 10px">
+    <div id="Main" class="container" style="height: 0px">
       <iframe id="Iframe" src="Content/introduction.html" width="100%" height="min-content;"></iframe>
     </div>
     <script type="text/javascript">
-      function switchpage(url) {
-        document.getElementById("Iframe").src = url;
-        console.log(url);
+      window.onload = TakeAShit;
+      window.onresize = TakeAShit;
+
+      function FixTheme() {
+        let el = document.getElementById('bodytoggle');
+        if (el.className === 'light') {
+          activetheme = 'light';
+        } else {
+          activetheme = 'dark';
+        }
+        if (activetheme === "dark") {
+          $("iframe").contents().find("#bodytoggle").addClass('dark');
+          $("iframe").contents().find("#bodytoggle").removeClass('light');
+        }
       }
+
+      function TakeAShit() {
+        let box = document.querySelector('#ToC');
+        console.log(box);
+        let height = box.clientHeight;
+        console.log(height);
+        document.getElementById("Main").style.height = height + "px";
+        document.getElementById("Iframe").style.height = height - 4 + "px";
+      }
+
+
+      function switchpage(url) {
+        document.getElementById("Main").style.height = 0 + "px";
+        setTimeout(function() {
+          document.getElementById("Iframe").src = url;
+          TakeAShit()
+        }, 333);
+      setTimeout(function() {
+                FixTheme()
+              }, 370);
+            }
+
     </script>
     <script type="text/javascript">
-    window.onload = doALoadOfStuff;
-
-    window.onresize = doALoadOfStuff;
-
-    function doALoadOfStuff() {
-      let box = document.querySelector('#ToC');
-      console.log(box);
-      let height = box.clientHeight;
-      console.log(height);
-      document.getElementById("Main").style.height = height +"px";
-      document.getElementById("Iframe").style.height = height -4 +"px";
-
-    }
-
-
+      $('.lightswitch').click(function() {
+        $('#bodytoggle').toggleClass('light dark');
+        $("iframe").contents().find("#bodytoggle").toggleClass('light dark');
+      });
     </script>
 </body>
 
