@@ -183,10 +183,10 @@
         <li class="tabbed1x lightswitch"><span><a href="#">
               •Toggle Dark Mode</a></span></li>
 
-              <li><span>
-                  <p>
-                    V0.31</p>
-                </span></li>
+        <li><span>
+            <p>
+              V0.32</p>
+          </span></li>
       </ul>
     </div>
 
@@ -194,14 +194,6 @@
       <iframe id="Iframe" src="Content/introduction.html" width="100%" height="min-content;"></iframe>
     </div>
     <script type="text/javascript">
-
-    $('#Iframe').on("load", function() {
-      setTimeout(function(){
-    TakeAShit();
-    FixTheme();
-  }, 0);
-    });
-
       window.onload = TakeAShit;
       window.onresize = TakeAShit;
 
@@ -229,18 +221,20 @@
 
 
       function switchpage(url) {
-        document.getElementById("Main").style.height = 0 + "px";
-        setTimeout(function(){
-        document.getElementById("Iframe").src = url;
-      globalThis.yourGlobalVariable = url;
-      console.log(yourGlobalVariable);
+        document.getElementById("Iframe").style.display = "none";
+
+          document.getElementById("Iframe").src = url;
+          globalThis.yourGlobalVariable = url;
+          console.log(yourGlobalVariable);
+          setTimeout(function() {
+          document.getElementById("Iframe").style.display = "block";
+          FixTheme();
 
 
-    }, 0250);
+        }, 250);
 
 
-}
-
+      }
     </script>
     <script type="text/javascript">
       $('.lightswitch').click(function() {
