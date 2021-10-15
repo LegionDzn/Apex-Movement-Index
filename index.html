@@ -189,6 +189,14 @@
       <iframe id="Iframe" src="Content/introduction.html" width="100%" height="min-content;"></iframe>
     </div>
     <script type="text/javascript">
+
+    $('#Iframe').on("load", function() {
+      setTimeout(function(){
+    TakeAShit();
+    FixTheme();
+  }, 0);
+    });
+
       window.onload = TakeAShit;
       window.onresize = TakeAShit;
 
@@ -217,14 +225,16 @@
 
       function switchpage(url) {
         document.getElementById("Main").style.height = 0 + "px";
-        setTimeout(function() {
-          document.getElementById("Iframe").src = url;
-          TakeAShit()
-        }, 533);
-      setTimeout(function() {
-                FixTheme()
-              }, 570);
-            }
+        setTimeout(function(){
+        document.getElementById("Iframe").src = url;
+      globalThis.yourGlobalVariable = url;
+      console.log(yourGlobalVariable);
+
+
+    }, 0250);
+
+
+}
 
     </script>
     <script type="text/javascript">
