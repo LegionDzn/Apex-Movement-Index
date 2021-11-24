@@ -9,7 +9,7 @@
 
 </head>
 
-<body id="bodytoggle" class="light">
+<body id="masterlightswitch" class="light">
   <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 
   <div id="primarycontainer">
@@ -46,6 +46,9 @@
 
         <li class=""><span><a onclick="switchpage('Content/edgeboost.html')" href="#">
               •Edgeboost</a></span></li>
+
+              <li class=""><span><a onclick="switchpage('Content/lurch.html')" href="#">
+                    •Lurch</a></span></li>
 
         <li><span><a onclick="switchpage('Content/wallbounce.html')" href="#">
               •Wall Bounce</a></span></li>
@@ -95,7 +98,7 @@
         <li class="tabbed1x"><span><a onclick="switchpage('Content/wallrunning.html')" href="#">
               •Wall Running</a></span></li>
 
-        <li><span><a onclick="switchpage('Content/redirectingwithskey.html')" href="#">
+        <li><span><a onclick="switchpage('Content/redirecting.html')" href="#">
               •Redirecting With s-key</a></span></li>
 
 
@@ -135,8 +138,8 @@
               •Supergrapple</a></span></li>
 
 
-              <li class="tabbed1x"><span><a onclick="switchpage('Content/flatgroundgrapples.html')" href="#">
-                    •Flat Ground Grapples</a></span></li>
+        <li class="tabbed1x"><span><a onclick="switchpage('Content/flatgroundgrapples.html')" href="#">
+              •Flat Ground Grapples</a></span></li>
 
 
         <li><span>
@@ -175,12 +178,12 @@
             <p>
               Created By Legion#0567</p>
           </span></li>
-        <li class="tabbed1x lightswitch"><span><a href="#">
+        <li class="tabbed1x lightswitch"><span><a onclick="ToggleDark()" href="#">
               •Toggle Dark Mode</a></span></li>
 
         <li><span>
             <p>
-              V0.46</p>
+              V0.48</p>
           </span></li>
       </ul>
     </div>
@@ -189,21 +192,10 @@
       <iframe id="Iframe" src="Content/introduction.html" width="100%" height="min-content;"></iframe>
     </div>
     <script type="text/javascript">
+      window.onload = setdark;
       window.onload = TakeAShit;
       window.onresize = TakeAShit;
-
-      function FixTheme() {
-        let el = document.getElementById('bodytoggle');
-        if (el.className === 'light') {
-          activetheme = 'light';
-        } else {
-          activetheme = 'dark';
-        }
-        if (activetheme === "dark") {
-          $("iframe").contents().find("#bodytoggle").addClass('dark');
-          $("iframe").contents().find("#bodytoggle").removeClass('light');
-        }
-      }
+      var DarkModeDesired = false;
 
       function TakeAShit() {
         let box = document.querySelector('#ToC');
@@ -212,30 +204,33 @@
         console.log(height);
         document.getElementById("Main").style.height = height + "px";
         document.getElementById("Iframe").style.height = height - 4 + "px";
+
+}
+      function ToggleDark() {
+        DarkModeDesired = !DarkModeDesired;
+        setdark(DarkModeDesired)
       }
 
+      function setdark() {
+        if (DarkModeDesired == true) {
+          console.log("turning on dark mode");
+          document.getElementById("masterlightswitch").classList.add('dark');
+          $('#Iframe').contents().find('#bodytoggle').addClass('dark');
+        } else {
+          console.log("turning off dark mode");
+          document.getElementById("masterlightswitch").classList.remove('dark');
+          $('#Iframe').contents().find('#bodytoggle').removeClass('dark');
+        }
+      }
 
       function switchpage(url) {
+        setdark()
         document.getElementById("Iframe").style.display = "none";
-
         document.getElementById("Iframe").src = url;
         globalThis.yourGlobalVariable = url;
         console.log(yourGlobalVariable);
-        setTimeout(function() {
-          document.getElementById("Iframe").style.display = "block";
-          FixTheme();
-
-
-        }, 250);
-
-
+        document.getElementById("Iframe").style.display = "block";
       }
-    </script>
-    <script type="text/javascript">
-      $('.lightswitch').click(function() {
-        $('#bodytoggle').toggleClass('light dark');
-        $("iframe").contents().find("#bodytoggle").toggleClass('light dark');
-      });
     </script>
 
 </body>
