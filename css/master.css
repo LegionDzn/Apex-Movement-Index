@@ -48,15 +48,16 @@ div.br {
 #Main {
   overflow: scroll;
   width: 100%;
-  width: -moz-available;          /* WebKit-based browsers will ignore this. */
-  width: -webkit-fill-available;  /* Mozilla-based browsers will ignore this. */
+  width: -moz-available;
+  /* WebKit-based browsers will ignore this. */
+  width: -webkit-fill-available;
+  /* Mozilla-based browsers will ignore this. */
   width: fill-available;
   align-self: flex-end;
   overflow: auto;
   align-self: flex-start;
   margin-left: 1.3em;
 }
-
 
 img {
   margin: 0px;
@@ -102,7 +103,7 @@ transform-origin: top right;
 } */
 .VidCont {
   background-position: center;
-background-size: contain;
+  background-size: contain;
   background-image: url(../img/loading.jpg);
   float: right;
   width: calc(1920px * 0.3);
