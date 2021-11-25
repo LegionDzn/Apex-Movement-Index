@@ -101,6 +101,9 @@ p, .PriText {
 transform-origin: top right;
 } */
 .VidCont {
+  background-position: center;
+background-size: contain;
+  background-image: url(../img/loading.jpg);
   float: right;
   width: calc(1920px * 0.3);
   height: calc(1080px * 0.3);
