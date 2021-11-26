@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="" dir="ltr">
+<html lang="" dir="ltr" onmouseout="console.log("mousein")
+">
 
 <head>
   <meta charset="utf-8">
@@ -19,15 +20,14 @@
 </head>
 
 
-
-<body id="bodytoggle" class="light">
+<body id="bodytoggle" class="light" >
   <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 
  <script src="../js/subpage.js" charset="utf-8"></script>
   <p style="display:inline;" class="header">Prerequisites</p>
   <div style="margin-top: 0em;" class="br"></div>
   <div id="flex1" class="Priflex containerbutbetter">
-    <div  class="VidCont"> <video id="ID1" class="player" width="100%" height="100%" controls loop onmouseover="this.play()"onmouseout="this.pause()">
+    <div  class="VidCont"> <video id="ID1" class="player" width="100%" height="100%" controls loop onmouseover="this.play()">
 
          <source src="../videos/binds.mp4" type="video/mp4" /> Your browser does not support the video tag.
 
@@ -39,8 +39,9 @@
   </div>
   <div class="br"></div>
   <div id="flex2" class="Priflex containerbutbetter">
-    <div  class="VidCont"> <video id="ID2" class="player" width="100%" height="100%" controls loop onmouseover="this.play()"onmouseout="this.pause()">
-    <source src="../videos/Content Yet To Be Added.mp4" type="video/mp4" /> Your browser does not support the video tag.
+    <div  class="VidCont"> <video id="ID2" class="player" width="100%" height="100%" controls loop>
+<source src="../videos/Content Yet To Be Added.mp4" type="video/mp4" /> Your browser does not support the video tag.
+
   </video> </div>
     <div class="PriText">
       <p><h3>Content Yet To Be Added</h3></p>
