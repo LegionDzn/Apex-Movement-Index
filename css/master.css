@@ -1,5 +1,72 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+/* +++++++++++++++++++++++++++++++++++++ Calculator +++++++++++++++++++++++++++++++++++++ */
+#widgetflex {
+  display: flex;
+  width: calc(100% - 2%);
+  margin: auto;
+}
+
+.widget {
+  width: 290px;
+  height: min-content;
+  background-color: red;
+  margin-right: 16px;
+}
+
+.widgettitle {
+  text-align: center;
+  font-size: 1.125em;
+  font-family: roboto;
+  font-weight: 500;
+  margin: auto;
+}
+
+.widgetcontent {
+  height: calc(100% - 80px);
+  margin: 0 auto;
+  padding: 10px;
+  position: relative;
+  background-color: var(--main-bg-color);
+}
+
+.widgetcontent>* {
+  width:80%;
+  margin-bottom: 16px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+select{
+  width: 244px !important;
+}
+.form-field,select {
+  color: var(--text-color);
+  height: 30px;
+  padding: 0 12px;
+  border: 2px solid #ddd;
+  /* border-radius: 4px; */
+  outline: 0;
+  transition: .2s;
+  margin-top: 20px;
+}
+
+.form-field:focus {
+  border-color: hsl(0, 0%, 14%);
+}
+
+.form>button {
+  padding: 12px 10px;
+  border: 0;
+  background: linear-gradient(to right, #de48b5 0%, #0097ff 100%);
+  border-radius: 3px;
+  margin-top: 10px;
+  color: #fff;
+  letter-spacing: 1px;
+  font-family: 'Rubik', sans-serif;
+}
+
+/* +++++++++++++++++++++++++++++++++++++ Calculator +++++++++++++++++++++++++++++++++++++ */
 * {
   font-family: roboto;
   margin: 0px;
