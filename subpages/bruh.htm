@@ -59,7 +59,7 @@
         <p class="widgettitle">Convert cm/360 to Sens</p>
         <input class="form-field" type="text" id="dpi2" name="dpi2" onkeyup="cmtoingame()" onchange="cmtoingame()" placeholder="DPI" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" />
         <input class="form-field" type="text" id="cm2" name="cm2" onkeyup="cmtoingame()" onchange="cmtoingame()" placeholder="cm/360" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" />
-        <select id="dropdown2" id="yaw2" onkeyup="cmtoingame()" onupdate="cmtoingame()" placeholder="gameyaw">
+        <select id="dropdown2" id="yaw2" onkeyup="cmtoingame()" onchange="cmtoingame()" placeholder="gameyaw">
           <option value="0.022">Apex / Source / CS:GO</option>
           <option value="0.00556">Fortnite %</option>
           <option value="0.0066">Overwatch</option>
