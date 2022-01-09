@@ -74,6 +74,10 @@ select{
   background-color: unset;
 }
 
+h3{
+padding-bottom: 14px;
+
+}
 .containerbutbetter {
   background-color: var(--secondary-bg-color)
 }
@@ -126,6 +130,9 @@ div.br {
   margin-left: 1.3em;
 }
 
+.big{
+  margin-bottom: 7px;
+}
 img {
   margin: 0px;
   padding: 0px;

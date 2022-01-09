@@ -36,6 +36,6 @@ Supergrapple
 Jumppad	
 CeilingSurfing
 Revenant
-Multi-Wallbounce
+Multi-Walljump
 Corner-Wallrun
 AirStrafeSpeed

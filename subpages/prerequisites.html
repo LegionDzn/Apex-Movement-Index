@@ -27,19 +27,20 @@
   <p style="display:inline;" class="header">Prerequisites</p>
   <div style="margin-top: 0em;" class="br"></div>
   <div id="flex1" class="Priflex containerbutbetter">
-    <div  class="VidCont"> <video id="ID1" class="player" width="100%" height="100%" controls loop onmouseover="this.play()">
+    <div  class="VidCont"> <video id="ID1" class="player" width="100%" height="100%" onmouseover="this.play()" controls loop muted>
 
          <source src="../videos/binds.mp4" type="video/mp4" /> Your browser does not support the video tag.
 
        </video> </div>
 
     <div class="PriText">
-      <p><h3>Content Yet To Be Added</h3></p>
+      <p><h3>Binds</h3>
+      Some of the fundamental movement tech in Apex Legends relies on rapid button inputs, to aid in consistency and ease of execution of this tech it is advised that you set both Move Forward and Jump to scroll wheel directions. ex move forward to scroll up and jump to scroll down. It doesn't matter which scroll direction either is bound to, but I've found that scroll down bound to jump and scroll up bound to forward works better for me than the other way around.</p>
     </div>
   </div>
   <div class="br"></div>
   <div id="flex2" class="Priflex containerbutbetter">
-    <div  class="VidCont"> <video id="ID2" class="player" width="100%" height="100%" controls loop>
+    <div  class="VidCont"> <video id="ID2" class="player" width="100%" height="100%" onmouseover="this.play()" controls loop muted>
 <source src="../videos/Content Yet To Be Added.mp4" type="video/mp4" /> Your browser does not support the video tag.
 
   </video> </div>
@@ -49,8 +50,8 @@
   </div>
 
   <script type="text/javascript">
-  var $allVideos = $('video');
-
+  document.addEventListener('visibilitychange', function() {if (document.hidden) {console.log('pausing');$("video").each(function() {$(this).get(0).pause();});} else {console.log('well back');}}, false);
+   var $allVideos = $('video');
   $('video').on('play', function(e) {
     $allVideos.not(this).each(function() {
       this.pause()

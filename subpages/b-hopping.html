@@ -27,13 +27,13 @@
   <p style="display:inline;" class="header">B-hopping</p>
   <div style="margin-top: 0em;" class="br"></div>
   <div id="flex1" class="Priflex containerbutbetter">
-    <div  class="VidCont"> <video id="ID1" class="player" width="100%" height="100%" controls loop onmouseover="this.play()">
+    <div  class="VidCont"> <video id="ID1" class="player" width="100%" height="100%" onmouseover="this.play()" controls loop muted>
 
         <source src="../videos/bhop.mp4" type="video/mp4" /> Your browser does not support the video tag.
       </video> </div>
     <div class="PriText">
       <p>
-      <h3>Demonstration of Bhoping/Slidehoping with A and D</h3>
+      <h3>Bhoping/Slidehoping with A and D</h3>
       </p>
     </div>
     </p>
@@ -41,19 +41,19 @@
   </div>
   <div class="br"></div>
   <div id="flex2" class="Priflex containerbutbetter">
-    <div  class="VidCont"> <video id="ID2" class="player" width="100%" height="100%" controls loop onmouseover="this.play()">
+    <div  class="VidCont"> <video id="ID2" class="player" width="100%" height="100%" onmouseover="this.play()" controls loop muted>
         <source src="../videos/wsbhop.mp4" type="video/mp4" /> Your browser does not support the video tag.
       </video> </div>
     <div class="PriText">
       <p>
-      <h3>Demonstration of Bhoping/Slidehoping with W and S</h3>
+      <h3>Bhoping/Slidehoping with W and S</h3>
       </p>
     </div>
   </div>
 
   <script type="text/javascript">
-  var $allVideos = $('video');
-
+  document.addEventListener('visibilitychange', function() {if (document.hidden) {console.log('pausing');$("video").each(function() {$(this).get(0).pause();});} else {console.log('well back');}}, false); 
+   var $allVideos = $('video');
   $('video').on('play', function(e) {
     $allVideos.not(this).each(function() {
       this.pause()

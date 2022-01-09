@@ -1,9 +1,9 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="" dir="ltr">
 
 <head>
   <meta charset="utf-8">
-  <title>Tap Strafing - Apex Movement Index</title>
+  <title>Tapstrafe - Apex Movement Index</title>
   <link rel="stylesheet" href="../css/master.css">
   <link rel="stylesheet" href="../css/dark.css">
   <style>
@@ -22,33 +22,35 @@
 
 <body id="bodytoggle" class="light">
   <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
- 
+
  <script src="../js/subpage.js" charset="utf-8"></script>
-  <p style="display:inline;" class="header">Tap Strafing</p>
+  <p style="display:inline;" class="header">Tapstrafing</p>
   <div style="margin-top: 0em;" class="br"></div>
   <div id="flex1" class="Priflex containerbutbetter">
-    <div  class="VidCont"> <video class="player" width="100%" height="100%" controls loop onmouseover="this.play()" ">
+    <div  class="VidCont"> <video class="player" width="100%" height="100%" onmouseover="this.play()" controls loop muted>
         <source src="../videos/tapstrafe.mp4" type="video/mp4" /> Your browser does not support the video tag.
       </video> </div>
     <div class="PriText">
       <p>
-      <h3>Demonstration of Changing Direction With Tap Strafe</h3>
-      </p>
+      <h3>Changing Direction With Tap Strafe</h3>
+Tapstrafing is tech that allows you to sharply turn mid-air without losing much momentum, you can think of it as a supercharged air strafe. A Tapstrafe can be performed by spamming your forward input (typically by scrolling) and sharply air strafing in the direction you want to go all while mid-air.
+<br class="big">
+Note that when you exit a tapstrafe your direction will be offset by 45 degrees in the direction you tapstrafed in. For example, if you want to tapstrafe 180 degrees you'd end your tapstrafe at 135 degrees which would result in an overall 180 degrees. (135+45=180)      </p>
     </div>
   </div>
-  <!-- <div class="br"></div>
+  <div class="br"></div>
   <div id="flex2" class="Priflex containerbutbetter">
-    <div  class="VidCont"> <video id="ID2" class="player" width="100%" height="100%" controls loop onmouseover="this.play()" ">
-        <source src="../videos/tapstrafe2.mp4" type="video/mp4" /> Your browser does not support the video tag.
+    <div  class="VidCont"> <video id="ID2" class="player" width="100%" height="100%" onmouseover="this.play()" controls loop muted>
+      <source src="../videos/tsvsskey.mp4" type="video/mp4" /> Your browser does not support the video tag.
       </video> </div>
     <div class="PriText">
-      <p><h3>Content Yet To Be Added</h3></p>
+      <p><h3>Tapstrafe vs Momentum Shift</h3></p>
     </div>
-  </div> -->
+  </div>
 
   <script type="text/javascript">
-  var $allVideos = $('video');
-
+  document.addEventListener('visibilitychange', function() {if (document.hidden) {console.log('pausing');$("video").each(function() {$(this).get(0).pause();});} else {console.log('well back');}}, false);
+   var $allVideos = $('video');
   $('video').on('play', function(e) {
     $allVideos.not(this).each(function() {
       this.pause()

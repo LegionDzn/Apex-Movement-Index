@@ -27,12 +27,12 @@
   <p style="display:inline;" class="header">Slides</p>
   <div style="margin-top: 0em;" class="br"></div>
   <div id="flex1" class="Priflex containerbutbetter">
-    <div  class="VidCont"> <video id="myvideo" width="100%" height="100%" controls loop onmouseover="this.play()">
+    <div  class="VidCont"> <video id="myvideo" width="100%" height="100%" onmouseover="this.play()" controls loop muted>
         <source src="../videos/slide.mp4" type="video/mp4" /> Your browser does not support the video tag.
       </video> </div>
     <div class="PriText">
       <p>
-      <h3>Demonstration of Slide Jump</h3>
+      <h3>Slide Jump</h3>
       </p>
     </div>
   </div>
@@ -49,8 +49,8 @@
   </div>
 
   <script type="text/javascript">
-  var $allVideos = $('video');
-
+  document.addEventListener('visibilitychange', function() {if (document.hidden) {console.log('pausing');$("video").each(function() {$(this).get(0).pause();});} else {console.log('well back');}}, false); 
+   var $allVideos = $('video');
   $('video').on('play', function(e) {
     $allVideos.not(this).each(function() {
       this.pause()

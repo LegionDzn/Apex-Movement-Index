@@ -1,4 +1,4 @@
-Demonstration of movement (air strafes, tap strafe etc just things to make the game playable)
+ movement (air strafes, tap strafe etc just things to make the game playable)
  - recoil control
  - isolating 1v1's
  - learning the map the best way 
