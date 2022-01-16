@@ -67,6 +67,10 @@ select{
 }
 
 /* +++++++++++++++++++++++++++++++++++++ Calculator +++++++++++++++++++++++++++++++++++++ */
+
+p{
+  font-size: calc(1em * 0.975);
+}
 * {
   font-family: roboto;
   margin: 0px;
@@ -75,7 +79,7 @@ select{
 }
 
 h3{
-padding-bottom: 14px;
+padding-bottom: 6px;
 
 }
 .containerbutbetter {
@@ -131,7 +135,7 @@ div.br {
 }
 
 .big{
-  margin-bottom: 7px;
+  margin-bottom: 1em;
 }
 img {
   margin: 0px;
@@ -165,7 +169,7 @@ p, .PriText {
 
 .subheader {
   margin-left: .2em;
-  font-size: 1.125em;
+  font-size: 1.225em;
   font-family: roboto;
   font-weight: 500;
 }
