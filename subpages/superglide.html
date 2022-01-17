@@ -22,50 +22,76 @@
 
 <body id="bodytoggle" class="light">
   <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
- 
- <script src="../js/subpage.js" charset="utf-8"></script>
+
+  <script src="../js/subpage.js" charset="utf-8"></script>
   <p style="display:inline;" class="header">Superglide</p>
   <div style="margin-top: 0em;" class="br"></div>
   <div class="Priflex containerbutbetter">
-    <div  class="VidCont"> <video class="player" width="100%" height="100%" onmouseover="this.play()" controls loop muted>
+    <div class="VidCont"> <video class="player" width="100%" height="100%" onmouseover="this.play()" controls loop muted>
         <source src="../videos/ducksuperglide.mp4" type="video/mp4" /> Your browser does not support the video tag.
       </video> </div>
     <div class="PriText">
       <p>
-      <h3>Superglide Using Duck + Spacebar Jump</h3>
+      <h3>Basic Superglide</h3>
+      A superglide can be performed by mantling onto a surface, then while mantling holding a direction key (or two such as FORWARD + LEFT) except BACKWARDS and inputting a DUCK and JUMP at the same time at the apex of a mantel animation. This, if
+      performed correctly, will result
+      in your character accelerating to 550 velocity nearly instantaneously in the direction of the previously held directional input. The timing for supergliding has a very tight, 1-3 frame window near the apex of the mantle animation, so 50ms at
+      60fps or 20.7ms at 144fps. both DUCK and JUMP must both be pressed within this window to successfully execute a superglide. Many people struggle with the extremely tight timing of this so to aid in inputting a DUCK and JUMP within this window,
+      it's recommended that you bind either C, V, or B to crouch allowing you to press DUCK and JUMP with one motion of the thumb.
       </p>
     </div>
   </div>
   <div class="br"></div>
   <div id="flex2" class="Priflex containerbutbetter">
-    <div  class="VidCont"> <video id="ID2" class="player" width="100%" height="100%" onmouseover="this.play()" controls loop muted>
+    <div class="VidCont"> <video id="ID2" class="player" width="100%" height="100%" onmouseover="this.play()" controls loop muted>
         <source src="../videos/scrollsuperglide.mp4" type="video/mp4" /> Your browser does not support the video tag.
       </video> </div>
     <div class="PriText">
       <p>
       <h3>Superglide Using Duck + Scroll Jump</h3>
+      In this video, I demonstrate that Supergliding with scroll jump is possible all be it, more difficult.
       </p>
     </div>
   </div>
   <div class="br"></div>
   <div id="flex3" class="Priflex containerbutbetter">
-    <div  class="VidCont"> <video id="ID3" class="player" width="100%" height="100%" onmouseover="this.play()" controls loop muted>
+    <div class="VidCont"> <video id="ID3" class="player" width="100%" height="100%" onmouseover="this.play()" controls loop muted>
         <source src="../videos/dirsuperglide.mp4" type="video/mp4" /> Your browser does not support the video tag.
       </video> </div>
     <div class="PriText">
       <p>
       <h3>Directional Superglides</h3>
+      In this video, I demonstrate some, not all directional superglides.
+      <br class="big">
+      Here is a list of all possible directional superglides on MnK
+      <br class="big">
+      <p class="tabbed1x">
+        • (A+S) LEFT + BACKWARDS (Seemingly more difficult)
+        <br>
+        • (A) LEFT
+        <br>
+        • (A+W) LEFT + FORWARDS
+        <br>
+        • (W) FORWARDS
+        <br>
+        • (D+W) RIGHT + FORWARDS
+        <br>
+        • (D) RIGHT
+        <br>
+        • (D+S) RIGHT + BACKWARDS (Seemingly more difficult)
+      </p>
       </p>
     </div>
   </div>
   <div class="br"></div>
   <div id="flex4" class="Priflex containerbutbetter">
     <div style="background: pink;" class="VidCont"> <video id="ID4" class="player" width="100%" height="100%" onmouseover="this.play()" controls loop muted>
-        <source src="../videos/superglideredir.mp4" type="video/mp4" /> Your browser does not support the video tag.
+        <source src="../videos/tapstrafesuperglide.mp4" type="video/mp4" /> Your browser does not support the video tag.
       </video> </div>
     <div class="PriText">
       <p>
-      <h3>Tapstrafing mid Superglide</h3>
+      <h3>Tapstrafing out of a  Superglide</h3>
+      Supergliding also counts as a jump therefore your lurch is charged for .5 seconds after you superglide allowing you to tapstrafe out of superglides.
       </p>
     </div>
   </div>
@@ -73,24 +99,34 @@
 
 
   <div id="flex5" class="Priflex containerbutbetter">
-    <div  class="VidCont"> <iframe width="100%" height="100%" src="https://www.youtube.com/embed/yrTyN10ng4Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <div class="VidCont"> <iframe width="100%" height="100%" src="https://www.youtube.com/embed/2VL6Kp8QYYI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
     <div class="PriText">
-      <p><h3>Mokeysniper Vid
+      <p>
+      <h3>A comprensive superglide guide by wrthcrw which covers all I mentioned including some rollouts.
         <!-- <p style="color: gray; display:inline; font-size: 1em" class="header">AKA. Skrullgrapple</p> -->
-      </h3></p>
+      </h3>
+      </p>
     </div>
   </div>
 
   <script type="text/javascript">
-  document.addEventListener('visibilitychange', function() {if (document.hidden) {console.log('pausing');$("video").each(function() {$(this).get(0).pause();});} else {console.log('well back');}}, false); 
-   var $allVideos = $('video');
-  $('video').on('play', function(e) {
-    $allVideos.not(this).each(function() {
-      this.pause()
-    })
-  });
-
+    document.addEventListener('visibilitychange', function() {
+      if (document.hidden) {
+        console.log('pausing');
+        $("video").each(function() {
+          $(this).get(0).pause();
+        });
+      } else {
+        console.log('well back');
+      }
+    }, false);
+    var $allVideos = $('video');
+    $('video').on('play', function(e) {
+      $allVideos.not(this).each(function() {
+        this.pause()
+      })
+    });
   </script>
 </body>
 
