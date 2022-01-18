@@ -191,8 +191,9 @@ transform-origin: top right;
   background-size: contain;
   background-image: url(../img/loading.jpg);
   float: right;
-  width: calc(1920% * 0.024);
-  height: calc(1080% * 0.024);
+  width: calc(16% * 3);
+  height: calc(9% * 3);
+  display: flex;
 }
 
 #credits {
