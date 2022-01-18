@@ -161,7 +161,10 @@ p, .PriText {
   font-family: 'Roboto Condensed', sans-serif;
   font-weight: 600;
 }
-
+.PriText p{
+line-height: 19px;
+  font-size: 15px;
+}
 .Priflex {
   width: -webkit-fill-available;
   min-height: 10px;
@@ -198,7 +201,7 @@ transform-origin: top right;
 
 #TocList {
   font-size: 12px;
-  line-height: 1.33em;
+  line-height: 1.39em;
   list-style-type: none;
   padding-bottom: 1em;
   font-weight: 450;

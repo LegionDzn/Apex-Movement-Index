@@ -32,23 +32,17 @@
         <source src="../videos/lurch.mp4" type="video/mp4" /> Your browser does not support the video tag.
       </video> </div>
     <div class="PriText">
-      <p><h3>Lurch</h3></p>
-    </div>
-  </div>
-  <div class="br"></div>
-  <div id="flex2" class="Priflex containerbutbetter">
-    <div  class="VidCont"> <video id="ID2" class="player" width="100%" height="100%" onmouseover="this.play()" controls loop muted>
-<source src="../videos/Content Yet To Be Added.mp4" type="video/mp4" /> Your browser does not support the video tag.
+      <h3>Introduction to Lurch</h3>
+      <p>
+        Strafe lurch or lurch is something that has been hardcoded into the game even since Titanfall 2. Lurch occurs when you input a directional input within a 500ms or half-second window after jumping, for this period your lurch is "Charged" when you input a directional input your character lurches in that direction.  Note that for the first 200ms of this 500ms window your lurch is significantly more powerful, and after this 200ms period your lurch strength will deteriorate over the remaining 300ms.
+        Mastering lurch is the first step to gaining full control of your micro-movements in-game.
 
-
-  </video> </div>
-    <div class="PriText">
-      <p><h3>Content Yet To Be Added</h3></p>
+      </p>
     </div>
   </div>
 
   <script type="text/javascript">
-  document.addEventListener('visibilitychange', function() {if (document.hidden) {console.log('pausing');$("video").each(function() {$(this).get(0).pause();});} else {console.log('well back');}}, false); 
+  document.addEventListener('visibilitychange', function() {if (document.hidden) {console.log('pausing');$("video").each(function() {$(this).get(0).pause();});} else {console.log('well back');}}, false);
    var $allVideos = $('video');
   $('video').on('play', function(e) {
     $allVideos.not(this).each(function() {
