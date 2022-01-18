@@ -9,8 +9,8 @@
 
 
 .dark {
-  --main-bg-color: #2f2f2f;
-  --secondary-bg-color: rgb(37 37 37);
+  --main-bg-color: #272521;
+  --secondary-bg-color: hsl(40, 8%,11%);
   --text-color: gainsboro;
-  --link-color: #8185ea;
+  --link-color: hsl(0, 27%, 50%);
 }
