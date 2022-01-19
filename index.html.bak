@@ -58,7 +58,7 @@
 
 
         <li class="searchableitem"><span><a onclick="switchpage('subpages/zipline.html')" href="#"> •Zipline</a></span></li>
-        <li class="tabbed1x searchableitem"><span><a onclick="switchpage('subpages/zipinesuperjump.html')" href="#"> •Zipline Superjump</a></span></li>
+        <li class="tabbed1x searchableitem"><span><a onclick="switchpage('subpages/zipinesuperjump.html')" href="#"> •Zipine Superjump</a></span></li>
         <li class="tabbed1x searchableitem"><span><a onclick="switchpage('subpages/ziplinehyperjump.html')" href="#"> •Zipline Hyper Jump</a></span></li>
         <li class="tabbed1x searchableitem"><span><a onclick="switchpage('subpages/ziplineelitejump.html')" href="#"> •Zipline Elite jump</a></span></li>
         <li class="tabbed1x searchableitem"><span><a onclick="switchpage('subpages/ziplineelitedismount.html')" href="#"> •Zipline Elite Dismount</a></span></li>
@@ -67,6 +67,12 @@
         <li class="tabbed1x searchableitem"><span><a onclick="switchpage('subpages/superglide.html')" href="#"> •Superglide Wall Jump</a></span></li>
         <li class="searchableitem"><span><a onclick="switchpage('subpages/boopglitch.html')" href="#"> •Boopglitch</a></span></li>
         <li class="searchableitem"><span><a onclick="switchpage('subpages/edgebug.html')" href="#"> •Edgebug</a></span></li>
+        <p class="subheader"></p>
+        <br>
+        <p class="subheader">Character Specific</p>
+        <div class="br">
+
+        </div>
         <li class="searchableitem"><span>
             <p> •Wraith</p>
           </span></li>
@@ -110,7 +116,7 @@
         <br>
 
         <li><span>
-            <p>V0.72</p>
+            <p>V0.71</p>
           </span></li>
         <li><span>
             <p>Created By Legion#0567</p>
