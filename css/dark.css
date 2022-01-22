@@ -1,14 +1,13 @@
-.light {
+.dark {
   --main-bg-color: white;
   --secondary-bg-color:   rgba(220, 220, 220, 1);
   --text-color: black;
   --link-color: #3835b3;
-;
 
 }
 
 
-.dark {
+.light {
   --main-bg-color: #272521;
   --secondary-bg-color: hsl(40, 8%,11%);
   --text-color: gainsboro;
