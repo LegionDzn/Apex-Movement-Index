@@ -30,13 +30,15 @@
   position: relative;
   background-color: var(--main-bg-color);
 }
-.inverseborder{
+
+.inverseborder {
   color: var(--text-color) !important;
   border: 1px solid black !important;
-margin-top: 0px !important;
-padding-top: 0px !important;
-margin-left: 4px !important;
+  margin-top: 0px !important;
+  padding-top: 0px !important;
+  margin-left: 4px !important;
 }
+
 .widgetcontent>* {
   width: 80%;
   margin-bottom: 16px;
@@ -144,7 +146,7 @@ div.br {
 }
 
 .big {
-   display: block;
+  display: block;
   margin-bottom: 1em;
   content: "";
 }
@@ -169,10 +171,12 @@ p, .PriText {
   font-family: 'Roboto Condensed', sans-serif;
   font-weight: 600;
 }
-.PriText p{
-line-height: 19px;
+
+.PriText p {
+  line-height: 19px;
   font-size: 15px;
 }
+
 .Priflex {
   width: -webkit-fill-available;
   min-height: 10px;
@@ -180,6 +184,14 @@ line-height: 19px;
   margin-right: .4em;
   flex-wrap: nowrap;
   border: 0px !important;
+}
+
+.VidCont p {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .subheader {
@@ -199,8 +211,8 @@ transform-origin: top right;
   background-size: contain;
   background-image: url(../img/loading.jpg);
   float: right;
-  width: calc(16 * 43px);
-  height: calc(9 * 43px);
+  width: 0px;
+  flex-direction: column-reverse;
   display: flex;
 }
 

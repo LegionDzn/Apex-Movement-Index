@@ -11,3 +11,20 @@ function containtermouseout()
   document.querySelectorAll('video').forEach(vid => vid.pause());
 }
 console.log("mousein");
+
+
+
+window.onload = SetVideoWidth;
+window.onresize = SetVideoWidth;
+
+function SetVideoWidth() {
+  var width = document.body.clientWidth;
+  var calculatedwidth = width * .44 +"px";
+
+
+
+  var elements = document.getElementsByClassName('VidCont');
+for (var i = 0; i < elements.length; i++) {
+    elements[i].style.width = calculatedwidth;
+}
+}

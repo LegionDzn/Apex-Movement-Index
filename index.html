@@ -110,7 +110,7 @@
         <br>
 
         <li><span>
-            <p>V0.74</p>
+            <p>V0.75</p>
           </span></li>
         <li><span>
             <p>Created By Legion#0567</p>
@@ -127,12 +127,12 @@
       var DarkModeDesired = false;
 
       function TakeAShit() {
-        let box = document.querySelector('#ToC');
-        console.log(box);
-        let height = box.clientHeight;
-        console.log(height);
-        document.getElementById("Main").style.height = height + "px";
-        document.getElementById("Iframe").style.height = height - 4 + "px";
+        let sidebarelement = document.querySelector('#ToC');
+        let videoelement = document.getElementsByClassName("VidCont");
+        console.log(videoelement);
+
+        document.getElementById("Main").style.height = sidebarelement.clientHeight + "px";
+        document.getElementById("Iframe").style.height = sidebarelement.clientHeight - 4 + "px";
 
       }
 
