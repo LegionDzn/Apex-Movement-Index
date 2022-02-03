@@ -144,7 +144,9 @@ div.br {
 }
 
 .big {
+   display: block;
   margin-bottom: 1em;
+  content: "";
 }
 
 img {
