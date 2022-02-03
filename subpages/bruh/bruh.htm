@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>cm/360 calculator - Apex Movement Index</title>
+  <link rel="stylesheet" href="../../css/master.css">
+  <link rel="stylesheet" href="../../css/dark.css">
+  <style>
+    body {
+      background-color: var(--secondary-bg-color);
+    }
+
+    p,
+    .PriText {
+      color: var(--text-color)
+    }
+  </style>
+</head>
+
+
+
+<body id="bodytoggle" class="light">
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+  <script src="../../js/subpage.js" charset="utf-8"></script>
+  <p style="display:inline;" class="header">cm/360 calculator</p>
+  <div style="margin-top: 0em;" class="br"></div>
+
+  <div id="widgetflex">
+    <div class=" container widget" id="360tocm">
+      <div class="widgetcontent">
+        <p class="widgettitle">Convert Sens to cm/360</p>
+        <input class="form-field" type="text" id="dpi" name="dpi" onkeyup="ingametocm()" onchange="ingametocm()" placeholder="DPI" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" />
+        <input class="form-field" type="text" id="sens" name="sens" onkeyup="ingametocm()" onchange="ingametocm()" placeholder="Sensitivity" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" />
+
+        <select id="dropdown1" id="yaw" onkeyup="ingametocm()" onchange="ingametocm()" placeholder="gameyaw">
+          <option value="0.022">Apex / Source / CS:GO</option>
+          <option value="0.00556">Fortnite %</option>
+          <option value="0.0066">Overwatch</option>
+          <option value="0.0066">Call Of Duty</option>
+          <option value="0.00573">Reflex / Rainbow6</option>
+          <option value="0.07">Unreal 4</option>
+          <option value="0.1125">Rust</option>
+          <option value="0.01073">Splitgate</option>
+          <option value="0.0066">Destiny 2</option>
+          <option value="0.02222">Halo</option>
+          <option value="0.0034377486">BFV/4/2042</option>
+        </select>
+
+
+
+
+        <p class="widgettitle">Your cm/360 is:</p>
+        <p id="cm360" style="margin-bottom:0px;" class="widgettitle">00.000</p>
+      </div>
+    </div>
+    <div class=" container widget" id="cmto360">
+      <div class="widgetcontent">
+        <p class="widgettitle">Convert cm/360 to Sens</p>
+        <input class="form-field" type="text" id="dpi2" name="dpi2" onkeyup="cmtoingame()" onchange="cmtoingame()" placeholder="DPI" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" />
+        <input class="form-field" type="text" id="cm2" name="cm2" onkeyup="cmtoingame()" onchange="cmtoingame()" placeholder="cm/360" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" />
+        <select id="dropdown2" id="yaw2" onkeyup="cmtoingame()" onchange="cmtoingame()" placeholder="gameyaw">
+          <option value="0.022">Apex / Source / CS:GO</option>
+          <option value="0.00556">Fortnite %</option>
+          <option value="0.0066">Overwatch</option>
+          <option value="0.0066">Call Of Duty</option>
+          <option value="0.00573">Reflex / Rainbow6</option>
+          <option value="0.07">Unreal 4</option>
+          <option value="0.1125">Rust</option>
+          <option value="0.01073">Splitgate</option>
+          <option value="0.0066">Destiny 2</option>
+          <option value="0.02222">Halo</option>
+          <option value="0.0034377486">BFV/4/2042</option>
+      </select>
+        <p class="widgettitle">Your Converted Sens is:</p>
+        <p id="sensout" style="margin-bottom:0px;" class="widgettitle">00.000</p>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript">
+
+    function ingametocm() {
+      var select1 = document.getElementById('dropdown1');
+var yaw = select1.options[select1.selectedIndex].value;
+      var dpi = document.getElementById("dpi").value;
+      var sens = document.getElementById("sens").value;
+      var inc = sens * yaw
+      var incrimentdpi = dpi * inc
+      var disancein = 360 / incrimentdpi
+      var distancecm = disancein * 2.54
+        var distancecmround = distancecm.toFixed(9)
+      document.getElementById("cm360").innerHTML = distancecmround;
+    }
+
+    function cmtoingame() {
+      var select2 = document.getElementById('dropdown2');
+var yaw2 = select2.options[select2.selectedIndex].value;
+      var dpi2 = document.getElementById("dpi2").value;
+      var cm2 = document.getElementById("cm2").value;
+      var in2 = cm2 / 2.54;
+      var aa = 360 / dpi2;
+      var bb = aa / in2;
+      var sensout = bb / yaw2;
+      var sensoutround = sensout.toFixed(9)
+      document.getElementById("sensout").innerHTML = sensoutround;
+    }
+
+  </script>
+
+</body>
+
+</html>

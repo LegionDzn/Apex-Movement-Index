@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+
+<!-- ====================================== -->
+  <title>Superglide Wall Jump - Apex Movement Index</title>
+
+
+  <link rel="stylesheet" href="../../css/master.css">
+  <link rel="stylesheet" href="../../css/dark.css">
+  <style>
+    body {
+      background-color: var(--secondary-bg-color)
+    }
+  </style>
+</head>
+
+<body id="bodytoggle" class="light">
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+  <script src="../../js/subpage.js" charset="utf-8"></script>
+  <!-- ====================================== -->
+  <p style="display:inline;" class="header">Superglide Wall Jump</p>
+  <div style="margin-top: 0em;" class="br"></div>
+
+
+
+  <div class="Priflex containerbutbetter">
+    <div class="VidCont">
+      <video class="player" width="100%" height="100%" onmouseover="this.play()" controls loop muted>
+        <source src="superglidewalljump.mp4" type="video/mp4" /> Your browser does not support the video tag.
+      </video>
+    </div>
+
+    <div class="PriText">
+      <h3>How to superglide Wall Jump</h3>
+      <p>
+        The first documentation of a superglide into wall jump that I could find is published by Thevilnside, who said it's "No cap, the hardest movement trick ever" I spent hours trying to consistently perform this, and after many failed attempts, I belive I can say that this is the hardest movement which i've. However, I've found a much easier method to perform superglide wall jumps. That being:
+<br class="big">
+        Simply Superglide at a wall, then simply input two short distinct impulses of scroll jump. After which you should wall jump out of a superglide.    </div>
+  </div>
+
+  <div class="br"></div>
+
+  <div class="Priflex containerbutbetter">
+    <div class="VidCont">
+<iframe class="player" width="100%" height="100%" src="https://www.youtube.com/embed/h_DrIW6UGnI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+    <div class="PriText">
+      <h3>Thevilnside's orignal video; a guide and explination of how to superglide into wall a jump.
+</h3>
+       <p>
+      </p>
+    </div>
+  </div>
+
+  <!-- <div class="br"></div>
+  <div class="Priflex containerbutbetter">
+    <div class="VidCont">
+      <video class="player" width="100%" height="100%" onmouseover="this.play()" controls loop muted>
+        <source src="xva.mp4" type="video/mp4" /> Your browser does not support the video tag.
+      </video>
+    </div>
+
+    <div class="PriText">
+      <h3>XVAFX</h3>
+       <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vitae libero quis urna lacinia gravida. Etiam ex ex, consectetur nec tellus quis, iaculis fermentum eros. Integer consequat mi vitae odio commodo, convallis euismod nisl venenatis.
+      Mauris in vehicula ligula. Donec in elit at mauris facilisis dapibus eget a sapien. Cras commodo, libero sed ultrices elementum, massa mauris blandit dui, eu feugiat odio orci nec orci. Quisque semper est in commodo viverra. Duis mattis
+      accumsan lectus eget pellentesque. Nunc porttitor mi et velit varius molestie. Praesent vitae elit lectus. Nulla at enim sed arcu sagittis consequat in eget purus. Integer placerat sit amet neque quis rhoncus.
+      </p>
+    </div>
+  </div> -->
+
+
+  <script type="text/javascript">
+    document.addEventListener('visibilitychange', function() {
+      if (document.hidden) {
+        console.log('pausing');
+        $("video").each(function() {
+          $(this).get(0).pause();
+        });
+      } else {
+        console.log('well back');
+      }
+    }, false);
+    var $allVideos = $('video');
+    $('video').on('play', function(e) {
+      $allVideos.not(this).each(function() {
+        this.pause()
+      })
+    });
+  </script>
+</body>
+
+</html>

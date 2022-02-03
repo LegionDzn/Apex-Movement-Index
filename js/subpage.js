@@ -20,11 +20,15 @@ window.onresize = SetVideoWidth;
 function SetVideoWidth() {
   var width = document.body.clientWidth;
   var calculatedwidth = width * .44 +"px";
+var calculatedheight = width * 0.2475 +"px" ;
 
 
-
-  var elements = document.getElementsByClassName('VidCont');
+  var elements = document.getElementsByClassName('player');
 for (var i = 0; i < elements.length; i++) {
     elements[i].style.width = calculatedwidth;
+    elements[i].style.height = calculatedheight;
+    console.log(calculatedwidth);
+    console.log(calculatedheight);
+
 }
 }

@@ -172,7 +172,7 @@ p, .PriText {
   font-weight: 600;
 }
 
-.PriText p {
+.PriText p{
   line-height: 19px;
   font-size: 15px;
 }
@@ -190,6 +190,8 @@ p, .PriText {
   color: white;
   display: flex;
   align-items: center;
+  line-height: 19px;
+  font-size: 15px;
   justify-content: center;
   text-align: center;
 }
@@ -211,9 +213,11 @@ transform-origin: top right;
   background-size: contain;
   background-image: url(../img/loading.jpg);
   float: right;
-  width: 0px;
   flex-direction: column-reverse;
   display: flex;
+}
+.player{
+  width: 0px;
 }
 
 #credits {
