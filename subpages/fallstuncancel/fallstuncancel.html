@@ -21,7 +21,7 @@
   <script src="../../js/subpage.js" charset="utf-8"></script>
   <p style="display:inline;" class="header">Fall Stun Cancel</p>
   <div style="margin-top: 0em;" class="br"></div>
-  <div class="Priflex containerbutbetter">
+  <!-- <div class="Priflex containerbutbetter">
     <div class="VidCont"> <video class="player" width="100%" height="100%" onmouseover="this.play()" controls loop muted>
 
         <source src="fsc.mp4" type="video/mp4" /> Your browser does not support the video tag.
@@ -39,8 +39,7 @@
       </p>
     </div>
   </div>
-  </div>
-  <div class="br"></div>
+  <div class="br"></div> -->
   <div id="flex2" class="Priflex containerbutbetter">
     <div class="VidCont"> <video id="ID2" class="player" width="100%" height="100%" onmouseover="this.play()" controls loop muted>
         <source src="fsc2.mp4" type="video/mp4" /> Your browser does not support the video tag.
@@ -51,14 +50,14 @@
         The Wall Touch Method of Fall Stun canceling is performed by touching a wall before hitting the ground.
 
          This works due to the fact that you don't incur fall stun when in the climbing state, so by putting yourself in the climbing state while you hit the ground, you don't incur fall stun.
-  <br class="Big">This method is especially good for stun canceling when you have a large amount of horizontal momentum (e.x. Out of a big pathy grapple) due to it being able to preserve it instead of losing it with the melee method.
+  <br class="Big">Although a good setup for this tech is rare this method is especially good for stun canceling when you have a large amount of horizontal momentum (e.x. Out of a big pathy grapple) due to it being able to preserve momentum well.
 
       </p>
     </div>
   </div>
 
   <script type="text/javascript">
-    document.addEventListener('visibilitychange', function() {if (document.hidden) {console.log('pausing');$("video").each(function() {$(this).get(0).pause();});} else {console.log('well back');}}, false);
+    document.addEventListener('visibilitychange', function() {if (document.hidden) {console.log('pausing');$("video").each(function() {$(this).get(0).pause();});} else {}}, false);
    var $allVideos = $('video');
     $('video').on('play', function(e) {
       $allVideos.not(this).each(function() {

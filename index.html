@@ -4,8 +4,15 @@
 <head>
   <meta charset="utf-8">
   <title>Apex Movement Index</title>
+
   <link rel="stylesheet" href="css/master.css">
   <link rel="stylesheet" href="css/dark.css">
+
+  <script src="js/darkmode.js" charset="utf-8"></script>
+  <script src="js/resize.js" charset="utf-8"></script>
+  <script src="js/search.js" charset="utf-8"></script>
+  <script src="js/switchpage.js" charset="utf-8"></script>
+
 </head>
 
 <body id="masterlightswitch" class="light">
@@ -13,167 +20,102 @@
   <div id="primarycontainer">
     <div class="container ToC" id="ToC">
       <p class="header">APEX MOVEMENT INDEX</p>
-      <div class="br">
+      <div class="br"></div>
+      <div class="listcontainer">
 
+        <ul id="TocList">
+          <li class=""><span><a onclick="switchpage('subpages/introduction/introduction.html')" href="#"> Introduction</a></span></li>
+          <li class=""><span><a onclick="switchpage('subpages/prerequisites/prerequisites.html')" href="#"> Prerequisites</a></span></li>
+          <li class=""><span><a onclick="switchpage('subpages/holstering/holstering.html')" href="#"> Holstering and it's Importance</a></span></li>
+          <br>
+          <p class="subheader">Movement Tech</p>
+          <div class="br"></div>
+          <input class="form-field inverseborder" id="searchbar" autocomplete="off" onkeyup="run_search()" type="text" name="search" placeholder="Search..">
+          <div class="br"></div>
+        </ul>
       </div>
-      <ul id="TocList">
-        <li class=""><span><a onclick="switchpage('subpages/introduction/introduction.html')" href="#"> •Introduction</a></span></li>
-        <li class=""><span><a onclick="switchpage('subpages/prerequisites/prerequisites.html')" href="#"> •Prerequisites</a></span></li>
-        <li class=""><span><a onclick="switchpage('subpages/holstering/holstering.html')" href="#"> •Holstering and it's Importance</a></span></li>
-        <br>
-        <p class="subheader">Movement Tech</p>
-        <div class="br">
-        </div>
-        <input class="form-field inverseborder" id="searchbar" autocomplete="off" onkeyup="run_search()" type="text" name="search" placeholder="Search..">
-        <div class="br">
-        </div>
-      </ul>
-      <ul id="TocList">
 
-        <li class="searchableitem"><span><a onclick="switchpage('subpages/lurch/lurch.html')" href="#"> •Lurch</a></span></li>
-        <li class="searchableitem"><span><a onclick="switchpage('subpages/airstrafing/airstrafing.html')" href="#"> •Air Strafing</a></span></li>
-        <li class="searchableitem"><span><a onclick="switchpage('subpages/punchboosting/punchboosting.html')" href="#"> •Punch Boosting</a></span></li>
-        <li class="searchableitem"><span><a onclick="switchpage('subpages/fallstuncancel/fallstuncancel.html')" href="#"> •Fall Stun Cancel</a></span></li>
+      <div class="listcontainer populate"></div>
 
-        <li class="searchableitem"><span><a onclick="switchpage('subpages/slides/slides.html')" href="#"> •Slides</a></span></li>
-        <li class="tabbed1x searchableitem"><span><a onclick="switchpage('subpages/ledgeslide/ledgeslide.html')" href="#"> •Ledge Slide</a></span></li>
-        <li class="tabbed1x searchableitem"><span><a onclick="switchpage('subpages/skip-jumping/skip-jumping.html')" href="#"> •Skip-Jumping</a></span></li>
+      <div class="listcontainer">
+        <ul id="TocList">
+          <p class="subheader">Random Stuff</p>
+          <div class="br">
 
-        <li class="searchableitem"><span><a onclick="switchpage('subpages/slidehopping/slidehopping.html')" href="#"> •Slide-hopping</a></span></li>
-        <li class="searchableitem"><span><a onclick="switchpage('subpages/wallclimbing/wallclimbing.html')" href="#"> •Wall Climbs</a></span></li>
-        <li class="searchableitem"><span><a onclick="switchpage('subpages/tapstrafing/tapstrafing.html')" href="#"> •Tapstrafing</a></span></li>
-        <li class="searchableitem"><span><a onclick="switchpage('subpages/redirects/redirects.html')" href="#"> •Momentum Shifting</a></span></li>
-        <li class="searchableitem"><span><a onclick="switchpage('subpages/edgeboost/edgeboost.html')" href="#"> •Edgeboost</a></span></li>
+          </div>
+          <li class=""><span><a onclick="switchpage('subpages/bruh/bruh.htm')" href="#"> 360/cm Calculator</a></span></li>
+          <li class="lightswitch"><span><a onclick="ToggleDark()" href="#"> Toggle Dark Mode</a></span></li>
+          <li class=""><span><a onclick="switchpage('subpages/TEMPLATE/TEMPLATE.html')" href="#"> template</a></span></li>
+          <br>
+          <p class="subheader">Removed Tech</p>
+          <div class="br">
 
+          </div>
+          <li class="searchableitem"><span><a onclick="switchpage('subpages/punchboosting/punchboosting.html')" href="#"> Punch Boosting</a></span></li>
+          <div class="br">
+          </div>
+          <li><span>
+              <p>V0.78</p>
+            </span></li>
+          <li><span>
+              <p>Created By Legion#0567</p>
+            </span></li>
+        </ul>
+      </div>
 
-        <li class="searchableitem"><span><a onclick="switchpage('subpages/walljump/walljump.html')" href="#"> •Wall Jump</a></span></li>
-        <li class="tabbed1x searchableitem"><span><a onclick="switchpage('subpages/cyotejump/cyotejump.html')" href="#"> •Cyote Wall Jump</a></span></li>
-        <li class="tabbed1x searchableitem"><span><a onclick="switchpage('subpages/noslidewalljump/noslidewalljump.html')" href="#"> •No Slide Wall Jump</a></span></li>
-        <li class="tabbed1x searchableitem"><span><a onclick="switchpage('subpages/wallrunjump/wallrunjump.html')" href="#"> •Wallrun Jump</a></span></li>
-        <li class="tabbed1x searchableitem"><span><a onclick="switchpage('subpages/mantleskips/mantleskips.html')" href="#"> •Mantle Skips</a></span></li>
-        <li class="tabbed1x searchableitem"><span><a onclick="switchpage('subpages/fatiguewalljump/fatiguewalljump.html')" href="#"> •Fatigue Wall Jump</a></span></li>
-        <li class="tabbed2x searchableitem"><span><a onclick="switchpage('subpages/infinitewalljump/infinitewalljump.html')" href="#"> •Infinite Wall Jump</a></span></li>
-        <li class="searchableitem"><span><a onclick="switchpage('subpages/wallrunning/wallrunning.html')" href="#"> •Wall Running</a></span></li>
-
-
-        <li class="searchableitem"><span><a onclick="switchpage('subpages/zipline/zipline.html')" href="#"> •Zipline</a></span></li>
-        <li class="tabbed1x searchableitem"><span><a onclick="switchpage('subpages/superjump/superjump.html')" href="#"> •Zipline Superjump</a></span></li>
-        <li class="tabbed1x searchableitem"><span><a onclick="switchpage('subpages/ziplinehyperjump/ziplinehyperjump.html')" href="#"> •Zipline Hyper Jump</a></span></li>
-        <li class="tabbed1x searchableitem"><span><a onclick="switchpage('subpages/elitejump/elitejump.html')" href="#"> •Zipline Elite jump</a></span></li>
-        <li class="tabbed1x searchableitem"><span><a onclick="switchpage('subpages/elitedismount/elitedismount.html')" href="#"> •Zipline Elite Dismount</a></span></li>
-
-        <li class="searchableitem"><span><a onclick="switchpage('subpages/superglide/superglide.html')" href="#"> •Superglide</a></span></li>
-        <li class="tabbed1x searchableitem"><span><a onclick="switchpage('subpages/superglidewalljump/superglidewalljump.html')" href="#"> •Superglide Wall Jump</a></span></li>
-        <li class="searchableitem"><span><a onclick="switchpage('subpages/boopglitch/boopglitch.html')" href="#"> •Boopglitch</a></span></li>
-        <li class="searchableitem"><span><a onclick="switchpage('subpages/edgebug/edgebug.html')" href="#"> •Edgebug</a></span></li>
-        <li class="searchableitem"><span>
-            <p> •Wraith</p>
-          </span></li>
-        <li class="tabbed1x searchableitem"><span><a onclick="switchpage('subpages/speedboostfromabilitiesw/speedboostfromabilitiesw.html')" href="#"> •Speed Boost from Abilities</a></span></li>
-        <li class="tabbed1x searchableitem"><span><a onclick="switchpage('subpages/portalcancelsuperglide/portalcancelsuperglide.html')" href="#"> •Portal Cancel Super Glide</a></span></li>
-        <li class="searchableitem"><span>
-            <p> •Pathfinder</p>
-          </span></li>
-        <li class="tabbed1x searchableitem"><span><a onclick="switchpage('subpages/grappleslingshot/grappleslingshot.html')" href="#"> •Grapple Slingshot</a></span></li>
-        <li class="tabbed1x searchableitem"><span><a onclick="switchpage('subpages/grapplehop/grapplehop.html')" href="#"> •Grapple Hop</a></span></li>
-        <li class="tabbed1x searchableitem"><span><a onclick="switchpage('subpages/grappleminislingshot/grappleminislingshot.html')" href="#"> •Grapple Mini-Slingshot</a></span></li>
-        <li class="tabbed1x searchableitem"><span><a onclick="switchpage('subpages/supergrapple/supergrapple.html')" href="#"> •Supergrapple</a></span></li>
-        <li class="tabbed1x searchableitem"><span><a onclick="switchpage('subpages/flatgroundgrapples/flatgroundgrapples.html')" href="#"> •Flat Ground Grapples</a></span></li>
-        <li class="searchableitem"><span>
-            <p> •Octane</p>
-          </span></li>
-        <li class="tabbed1x searchableitem"><span>
-            <p> •Jump pad</p>
-          </span></li>
-        <li class="tabbed2x"><span><a onclick="switchpage('subpages/ceilingsurfing/ceilingsurfing.html')" href="#"> •Ceiling Surfing</a></span></li>
-        <li class="tabbed2x"><span><a onclick="switchpage('subpages/jumppaddoublejump/jumppaddoublejump.html')" href="#"> •Jump pad Double Jump<pad2></pad2></a></span></li>
-        <li class="tabbed2x"><span><a onclick="switchpage('subpages/enterjumppad/enterjumppad.html')" href="#"> •Entering Jump Pad<pad2></pad2></a></span></li>
-        <li class="searchableitem"><span>
-            <p> •Revanant</p>
-          </span></li>
-        <li class="tabbed1x searchableitem"><span><a onclick="switchpage('subpages/multiwalljump/multiwalljump.html')" href="#"> •Multi-Walljump</a></span></li>
-        <li class="tabbed1x searchableitem"><span><a onclick="switchpage('subpages/cornerwallrun/cornerwallrun.html')" href="#"> •Corner-Wallrun</a></span></li>
-        <li class="searchableitem"><span>
-            <p> •Horizion</p>
-          </span></li>
-        <li class="tabbed1x searchableitem"><span><a onclick="switchpage('subpages/airstrafespeed/airstrafespeed.html')" href="#"> •Air Strafe Speed</a></span></li>
-        <li class="tabbed1x searchableitem"><span><a onclick="switchpage('subpages/passive/passive.html')" href="#"> •Passive</a></span></li>
-        <br>
-        <p class="subheader">Random Stuff</p>
-        <div class="br">
-
-        </div>
-        <li class="tabbed1x"><span><a onclick="switchpage('subpages/bruh/bruh.htm')" href="#"> •360/cm Calculator</a></span></li>
-        <li class="tabbed1x lightswitch"><span><a onclick="ToggleDark()" href="#"> •Toggle Dark Mode</a></span></li>
-        <li class="tabbed1x"><span><a onclick="switchpage('subpages/TEMPLATE/TEMPLATE.html')" href="#"> •template</a></span></li>
-        <br>
-
-        <li><span>
-            <p>V0.77</p>
-          </span></li>
-        <li><span>
-            <p>Created By Legion#0567</p>
-          </span></li>
-      </ul>
     </div>
     <div id="Main" class="container" style="height: 0px">
       <iframe id="Iframe" src="subpages/introduction/introduction.html" width="100%" height="min-content;"></iframe>
     </div>
     <script type="text/javascript">
-      window.onload = setdark;
-      window.onload = TakeAShit;
-      window.onresize = TakeAShit;
-      var DarkModeDesired = false;
+      const output = document.querySelector('.populate');
+      const output1 = document.createElement('div');
+      const ul = document.createElement('ul');
+      output.append(output1);
+      output.append(ul);
+      ul.setAttribute('id', 'TocList');
 
-      function TakeAShit() {
-        let sidebarelement = document.querySelector('#ToC');
-        let videoelement = document.getElementsByClassName("VidCont");
-        console.log(videoelement);
+      ;
+      const url = 'data1.json';
+      window.addEventListener('DOMContentLoaded', () => {
+        loadData();
+      })
 
-        document.getElementById("Main").style.height = sidebarelement.clientHeight + "px";
-        document.getElementById("Iframe").style.height = sidebarelement.clientHeight - 4 + "px";
-
+      function loadData() {
+        fetch(url).then(rep => rep.json())
+          .then((data) => {
+            //console.log(data);
+            addtoPage(data);
+          })
       }
 
-      function ToggleDark() {
-        DarkModeDesired = !DarkModeDesired;
-        setdark(DarkModeDesired)
-      }
+      function addtoPage(arr) {
+        arr.forEach((el) => {
+          console.log(el);
+          const li = document.createElement('li');
+          const span = document.createElement('span');
+          const a = document.createElement('a');
+          const p = document.createElement('p');
 
-      function setdark() {
-        if (DarkModeDesired == true) {
-          console.log("turning on dark mode");
-          document.getElementById("masterlightswitch").classList.add('dark');
-          $('#Iframe').contents().find('#bodytoggle').addClass('dark');
-        } else {
-          console.log("turning off dark mode");
-          document.getElementById("masterlightswitch").classList.remove('dark');
-          $('#Iframe').contents().find('#bodytoggle').removeClass('dark');
-        }
-      }
-
-      function switchpage(url) {
-        setdark()
-        document.getElementById("Iframe").style.display = "none";
-        document.getElementById("Iframe").src = url;
-        globalThis.yourGlobalVariable = url;
-        console.log(yourGlobalVariable);
-        document.getElementById("Iframe").style.display = "block";
-
-      }
-
-      function run_search() {
-        let input = document.getElementById('searchbar').value
-        input = input.toLowerCase();
-        let x = document.getElementsByClassName('searchableitem');
-
-        for (i = 0; i < x.length; i++) {
-          if (!x[i].innerHTML.toLowerCase().includes(input)) {
-            x[i].style.display = "none";
+          var switchpageattr = "switchpage('subpages/" + el.name + "/" + el.name + "." + "html')"
+          console.log(switchpageattr);
+          a.setAttribute("onclick", switchpageattr);
+          a.setAttribute("href", "#");
+          a.textContent = "•" + el.title;
+          p.textContent = "•" + el.title;
+          li.classList.add("tabbed" + el.tabbed);
+          li.classList.add("searchableitem");
+          ul.append(li);
+          li.append(span);
+          if (el.linkless == 1) {
+            span.append(p);
           } else {
-            x[i].style.display = "list-item";
+            span.append(a);
+
           }
-        }
+
+
+        });
       }
     </script>
 

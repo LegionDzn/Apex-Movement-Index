@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+
+<!-- ====================================== -->
+  <title>Momentum Shifting - Apex Movement Index</title>
+
+
+  <link rel="stylesheet" href="../../css/master.css">
+  <link rel="stylesheet" href="../../css/dark.css">
+  <style>
+    body {
+      background-color: var(--secondary-bg-color)
+    }
+  </style>
+</head>
+
+<body id="bodytoggle" class="light">
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+  <script src="../../js/subpage.js" charset="utf-8"></script>
+  <!-- ====================================== -->
+  <p style="display:inline;" class="header">Momentum Shifting</p>
+  <div style="margin-top: 0em;" class="br"></div>
+
+
+
+  <div class="Priflex containerbutbetter">
+    <div class="VidCont">
+      <p>W+A+S+D redirect</p>
+      <video class="player" width="100%" height="100%" onmouseover="this.play()" controls loop muted>
+        <source src="basicwasdredirect.mp4" type="video/mp4" /> Your browser does not support the video tag.
+      </video>
+    </div>
+
+    <div class="PriText">
+      <h3></h3>
+      <p>
+      This video shows Momentum Shifts
+      <br class="big">
+A momentum shift is a blanket term that encompasses anything which utilizes lurch to shift your momentum.
+<br>
+The momentum shift highlighted in this article is a 180-degree momentum shift, allowing you to turn 180 degrees without moving your camera. This momentum shift is most useful for dodging in close-range gunfights and backsliding for pathfinder grapples.
+<br>
+      <br class="big">
+
+
+
+      This momentum shift can be performed by inputting 4 movement keys, these inputs are most effective when pressed individually, this is difficult since this tech takes advantage of lurch, which only lasts 1/2 second after you jump.
+
+      If performed correctly you should be able to hold before you land into a slide. But note that this momentum shift also has a range of applications even if you don't slide.
+      <br class="big">
+      These inputs vary depending on the direction in which you want to travel for example I will use a wasd redirect.
+      <br>
+      The inputs go as follows:
+      <br class="big">
+      <p class="tabbed1x">
+
+      1. Let go of the direction key in which you are traveling while you input a jump. (w)
+      <br>
+      2. Input a direction key perpendicular to the way you are traveling. (a)
+      <br>
+      3. Input a direction key opposite of the direction you were initially traveling. (s)
+      <br>
+      4. Input a direction key opposite of the perpendicular direction input you previously pressed. (d)
+      <br class="big">
+
+    </p>
+      You can also adjust how long you hold the final input key (d in this example) for increased control of your final position.
+    </p>
+    <br class="big">
+    <p>  4 momentum shifts grow increasingly weak with speed if speed is less than slide jump exit speed, making them practicly useless above that speed.</p>
+    </div>
+  </div>
+
+  <div class="br"></div>
+
+  <div class="Priflex containerbutbetter">
+    <div class="VidCont">
+      <video class="player" width="100%" height="100%" onmouseover="this.play()" controls loop muted>
+        <source src="forwardbackwardredirect.mp4" type="video/mp4" /> Your browser does not support the video tag.
+      </video>
+    </div>
+
+    <div class="PriText">
+      <h3>Forward / Backward Momentum Shift (180 degrees)</h3>
+      <p>
+      All possable momentum shifts in the forward / backward axis
+      <br class="big">
+      Here is a list of the inputs used in the video, they are in order of the individual momentum shits.
+      <br class="big">
+      <p class="tabbed1x">
+
+      1st. w > dsa
+      <br>
+      2nd. w > asd
+      <br>
+      3rd. s > dwa
+      <br>
+      4th. s > awd
+      </p></p>
+    </div>
+  </div>
+  <div class="br"></div>
+
+  <div class="Priflex containerbutbetter">
+    <div class="VidCont">
+      <video class="player" width="100%" height="100%" onmouseover="this.play()" controls loop muted>
+        <source src="tapstraferedir.mp4" type="video/mp4" /> Your browser does not support the video tag.
+      </video>
+    </div>
+
+    <div class="PriText">
+      <p>
+        <h3>Tapstrafe + Forward / Backward Momentum Shift</h3>
+        You can tapstrafe out of a forward / backward redirect to allow yourself to land with your momentum going forward.
+        <br class="big">
+        to perform this simply forward / backward momentum shift and hold your last directional input while scrolling FORWARD.
+        Timing the tap strafe is somewhat difficult due to the fact that it has to be after the redirect, but not too soon after else you will lose all your momentum.  All within the 500ms lurch window.
+      </p>
+    </div>
+  </div>
+
+  <div class="br"></div>
+  <div class="Priflex containerbutbetter">
+    <div class="VidCont">
+      <video class="player" width="100%" height="100%" onmouseover="this.play()" controls loop muted>
+        <source src="leftrightredirect.mp4" type="video/mp4" /> Your browser does not support the video tag.
+      </video>
+    </div>
+
+    <div class="PriText">
+      <h3>Left / Right Momentum Shift (180 degrees)</h3>
+      <p>
+All possable momentum shifts in the left / right axis
+      <br class="big">
+      Here is a list of the inputs used in the video, they are in order of the individual momentum shits.
+      <br class="big">
+      <p class="tabbed1x">
+      1st. d > saw
+      <br>
+      2nd. d > was
+      <br>
+      3rd. a > wds
+      <br>
+      4th. a > sdw
+      </p></p>
+    </div>
+  </div>
+  <script type="text/javascript">
+    document.addEventListener('visibilitychange', function() {
+      if (document.hidden) {
+        console.log('pausing');
+        $("video").each(function() {
+          $(this).get(0).pause();
+        });
+      } else {
+
+      }
+    }, false);
+    var $allVideos = $('video');
+    $('video').on('play', function(e) {
+      $allVideos.not(this).each(function() {
+        this.pause()
+      })
+    });
+  </script>
+</body>
+
+</html>
