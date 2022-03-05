@@ -22,7 +22,18 @@
     "tabbed": 0,
     "linkless": 0
   },
-
+  {
+    "title": "Skip Jumping",
+    "name": "skipjumping",
+    "tabbed": 1,
+    "linkless": 0
+  },
+    {
+    "title": "Micro Slide Jump",
+    "name": "microslidejump",
+    "tabbed": 1,
+    "linkless": 0
+  },
   {
     "title": "B-Hopping",
     "name": "bhopping",
@@ -186,7 +197,26 @@
     "name": "flatgroundgrapples",
     "tabbed": 1,
     "linkless": 0
-  }, {
+  }, 
+  {
+      "title": "Wattson",
+    "name": "wattson",
+    "tabbed": 0,
+    "linkless": 1
+  },
+    {
+      "title": "Insta Slide",
+    "name": "instaslide",
+    "tabbed": 1,
+    "linkless": 0
+  },
+    {
+      "title": "Wattson",
+    "name": "wattson",
+    "tabbed": 0,
+    "linkless": 1
+  },
+  {
     "title": "Wraith",
     "name": "Wraith",
     "tabbed": 0,
@@ -196,7 +226,7 @@
     "name": "Octane",
     "tabbed": 0,
     "linkless": 1
-  }, {
+  },  {
     "title": "Jump pad Double Jump",
     "name": "jumppaddoublejump",
     "tabbed": 1,
