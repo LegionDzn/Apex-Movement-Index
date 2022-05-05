@@ -197,7 +197,7 @@
     "name": "flatgroundgrapples",
     "tabbed": 1,
     "linkless": 0
-  }, 
+  },
   {
       "title": "Wattson",
     "name": "wattson",
@@ -209,12 +209,6 @@
     "name": "instaslide",
     "tabbed": 1,
     "linkless": 0
-  },
-    {
-      "title": "Wattson",
-    "name": "wattson",
-    "tabbed": 0,
-    "linkless": 1
   },
   {
     "title": "Wraith",
