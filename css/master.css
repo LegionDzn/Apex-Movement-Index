@@ -294,12 +294,19 @@ a:hover {
   overflow-x: hidden;
   /* Hide vertical scrollbar */
 }
-
+p::before{
+height: 100%;
+width: 2px;
+background-color: var(--secondary-bg-color);
+  content: "";
+}
 .container {
   border: 1px solid black;
   background-color: var(--secondary-bg-color);
 }
-
+video {
+  object-fit: fill;
+}
 li span {
   position: relative;
   left: .5em;
