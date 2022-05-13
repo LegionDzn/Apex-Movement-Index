@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Fall Stun Cancel - Apex Movement Index</title>
+  <link rel="stylesheet" href="../../css/master.css">
+  <link rel="stylesheet" href="../../css/dark.css">
+  <style>
+    body {
+      background-color: var(--secondary-bg-color)
+    }
+  </style>
+</head>
+
+
+
+<body id="bodytoggle" class="light">
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+  <script src="../../js/subpage.js" charset="utf-8"></script>
+  <p style="display:inline;" class="header">Fall Stun Cancel</p>
+  <div style="margin-top: 0em;" class="br"></div>
+  <div class="Priflex containerbutbetter">
+    <div class="VidCont"> <video class="player" width="100%" height="100%" onmouseover="this.play()" controls loop muted>
+
+        <source src="fsc.mp4" type="video/mp4" /> Your browser does not support the video tag.
+      </video> </div>
+    <div class="PriText">
+      <h3>Wall Punch Method</h3>
+      <p> To execute this tech is pretty simple. Simply melee into a surface while falling (or moving in any direction really). By meleeing into a wall your momentum will be halted in all directions, thereby negating fall stun.
+        <br class="big">
+        You used to be able to melee the ground just before you hit it which would gave the same effect, but this was patched out. Note that it is still possible to do, just not consistently.
+        <br class="big">
+        This method of fall stun canceling is technically inferior to the wall touch due to the fact that when you punch the object your movement is halted nearly entirely thereby canceling the fall stun but also potentially slowing you down. I don't
+        find that this downside makes this method inferior in practice though due to it being more generally applicable and easier to execute than the wall touch method.
+        <br class="big">
+        Also note that by timing the punch properly you can seriously reduce time loss on the halt.
+      </p>
+    </div>
+  </div>
+  </div>
+  <div class="br"></div>
+  <div id="flex2" class="Priflex containerbutbetter">
+    <div class="VidCont"> <video id="ID2" class="player" width="100%" height="100%" onmouseover="this.play()" controls loop muted>
+        <source src="fsc2.mp4" type="video/mp4" /> Your browser does not support the video tag.
+      </video> </div>
+    <div class="PriText">
+      <h3>Wall Touch Method</h3>
+      <p>
+        The Wall Touch Method of Fall Stun canceling is performed by touching a wall before hitting the ground.
+
+         This works due to the fact that you don't incur fall stun when in the climbing state, so by putting yourself in the climbing state while you hit the ground, you don't incur fall stun.
+  <br class="Big">This method is especially good for stun canceling when you have a large amount of horizontal momentum (e.x. Out of a big pathy grapple) due to it being able to preserve it instead of losing it with the melee method.
+
+      </p>
+    </div>
+  </div>
+
+  <script type="text/javascript">
+    document.addEventListener('visibilitychange', function() {if (document.hidden) {console.log('pausing');$("video").each(function() {$(this).get(0).pause();});} else {}}, false);
+   var $allVideos = $('video');
+    $('video').on('play', function(e) {
+      $allVideos.not(this).each(function() {
+        this.pause()
+      })
+    });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+
+  <!-- ====================================== -->
+  <title>Directory - Apex Movement Index</title>
+
+
+  <link rel="stylesheet" href="../../css/master.css">
+  <link rel="stylesheet" href="../../css/dark.css">
+
+  <script src="../../js/darkmode.js" charset="utf-8"></script>
+  <script src="../../js/resize.js" charset="utf-8"></script>
+  <script src="../../js/search.js" charset="utf-8"></script>
+  <style>
+    body {
+      background-color: var(--secondary-bg-color)
+    }
+  </style>
+</head>
+
+<body id="bodytoggle" class="light">
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+  <script src="../../js/subpage.js" charset="utf-8"></script>
+  <!-- ====================================== -->
+  <p style="display:inline;" class="header">Directory</p>
+  <!-- <p style="color: gray; display:inline; font-size: 1em" class="header">AKA. XVA</p> -->
+  <div style="margin-top: 0em;" class="br"></div>
+
+
+
+  <div class="Priflex director containerbutbetter">
+  <div class="PriText">
+    <h3>XVAFX</h3>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vitae libero quis urna lacinia gravida. Etiam ex ex, consectetur nec tellus quis, iaculis fermentum eros. Integer consequat mi vitae odio commodo, convallis euismod nisl venenatis.
+      Mauris in vehicula ligula. Donec in elit at mauris facilisis dapibus eget a sapien. Cras commodo, libero sed ultrices elementum, massa mauris blandit dui, eu feugiat odio orci nec orci. Quisque semper est in commodo viverra. Duis mattis
+      accumsan lectus eget pellentesque. Nunc porttitor mi et velit varius molestie. Praesent vitae elit lectus. Nulla at enim sed arcu sagittis consequat in eget purus. Integer placerat sit amet neque quis rhoncus.
+    </p>
+  </div>
+<div class="br">
+
+</div>
+    <div class="directoritem">
+      <p class="directorheader">Basic Movement Tech</p>
+      <div class="PriText">
+        <p style="padding-left: .5em;
+    padding-top: .2em;">
+          Basic Movement Tech to help you navigate the outlands. Most of if not all of these techniques can be learnt in a few minuites. </p>
+      </div>
+      <div class="br">
+        <p class="directorli"><a onclick="switchpage('subpages/slides/slides.html')" href="">•Slides</a> - Sliding basics</p>
+        <p class="directorli"><a onclick="switchpage('subpages/bhopping/bhopping.html')" href="">•B-Hopping</a> - Move while healing</p>
+        <p class="directorli"><a onclick="switchpage('subpages/walljump/walljump.html')" href="">•Wall Jump</a> - Walljump </p>
+      </div>
+    </div>
+      <div class="directoritem">
+        <p class="directorheader">Zipline Movement tech</p>
+        <div class="PriText">
+          <p style="padding-left: .5em;
+      padding-top: .2em;">
+            Basic Movement Tech to help you navigate the outlands. Most of if not all of these techniques can be learnt in a few minuites. </p>
+        </div>
+        <div class="br">
+          <p class="directorli"><a onclick="switchpage('subpages/superjump/superjump.html')" href="">•Zipline Superjump</a></p>
+          <p class="directorli"><a onclick="switchpage('subpages/bhopping/bhopping.html')" href="">•B-Hopping</a> - Move while healing</p>
+          <p class="directorli"><a onclick="switchpage('subpages/walljump/walljump.html')" href="">•Wall Jump</a> - Walljump </p>
+        </div>
+      </div>
+
+
+
+
+  <script type="text/javascript">
+    function switchpage(url) {
+      parent.switchpage(url)(document.getElementById("name").value);
+
+      console.log(win);
+    }
+
+
+
+    document.addEventListener('visibilitychange', function() {
+      if (document.hidden) {
+        console.log('pausing');
+        $("video").each(function() {
+          $(this).get(0).pause();
+        });
+      } else {
+
+      }
+    }, false);
+    var $allVideos = $('video');
+    $('video').on('play', function(e) {
+      $allVideos.not(this).each(function() {
+        this.pause()
+      })
+    });
+  </script>
+</body>
+
+</html>
