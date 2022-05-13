@@ -1,0 +1,46 @@
+
+*{
+  padding: 0;
+  margin: 0;
+}
+body{
+  background-color: var(--secondary-bg-color);
+height: max-content;
+  overflow-x: hidden;
+}
+
+a{
+  text-decoration: none;
+
+  font-size: 12px;
+}
+*{
+padding-left: 2px;
+}
+.heading1{
+  font-size: 27px;
+}
+@media screen and (max-width: 1100px) {
+  .heading2 {
+    text-align: left !important;
+  }
+}
+.heading2{
+  font-size: 18px;
+}
+.tabbed1 {
+  margin-left: 1.3em;
+}
+
+.tabbed2 {
+  margin-left: 2.6em;
+}
+
+.tabbed3 {
+  margin-left: 3.9em;
+}
+
+li::marker{
+  display: none;
+  font-size: 0;
+}

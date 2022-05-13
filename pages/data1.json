@@ -1,0 +1,265 @@
+[{
+    "title": "Lurch",
+    "name": "lurch",
+    "tabbed": 0,
+    "linkless": 0
+  },
+  {
+    "title": "Tapstrafing",
+    "name": "tapstrafing",
+    "tabbed": 1,
+    "linkless": 0
+  },
+  {
+    "title": "Airstrafing",
+    "name": "airstrafing",
+    "tabbed": 0,
+    "linkless": 0
+  },
+  {
+    "title": "Fall Stun Cancel",
+    "name": "fallstuncancel",
+    "tabbed": 0,
+    "linkless": 0
+  },
+  {
+    "title": "Slides",
+    "name": "slides",
+    "tabbed": 0,
+    "linkless": 0
+  },
+  {
+    "title": "Ledge Slide",
+    "name": "ledgeslide",
+    "tabbed": 1,
+    "linkless": 0
+  },
+  {
+    "title": "Skip Jumping",
+    "name": "skipjumping",
+    "tabbed": 1,
+    "linkless": 0
+  },
+    {
+    "title": "Micro Slide Jump",
+    "name": "microslidejump",
+    "tabbed": 1,
+    "linkless": 0
+  },
+  {
+    "title": "B-Hopping",
+    "name": "bhopping",
+    "tabbed": 0,
+    "linkless": 0
+  },
+  {
+    "title": "Slide Hopping",
+    "name": "slidehopping",
+    "tabbed": 1,
+    "linkless": 0
+  },
+  {
+    "title": "Wall Climbing",
+    "name": "wallclimbing",
+    "tabbed": 0,
+    "linkless": 0
+  },
+  {
+    "title": "Momentum Shifting",
+    "name": "momentumshifting",
+    "tabbed": 0,
+    "linkless": 0
+  },
+  {
+    "title": "Redirecting",
+    "name": "redirecting",
+    "tabbed": 1,
+    "linkless": 0
+  },
+  {
+    "title": "Wall Jump",
+    "name": "walljump",
+    "tabbed": 0,
+    "linkless": 0
+  },
+  {
+    "title": "Cyote jump",
+    "name": "cyotejump",
+    "tabbed": 1,
+    "linkless": 0
+  },
+  {
+    "title": "No slide Wall Jump",
+    "name": "noslidewalljump",
+    "tabbed": 1,
+    "linkless": 0
+  },
+  {
+    "title": "Wallrun Jump",
+    "name": "wallrunjump",
+    "tabbed": 1,
+    "linkless": 0
+  },
+  {
+    "title": "Mantle Skips",
+    "name": "mantleskips",
+    "tabbed": 1,
+    "linkless": 0
+  },
+  {
+    "title": "Fatigue Wall Jump",
+    "name": "fatiguewalljump",
+    "tabbed": 1,
+    "linkless": 0
+  },
+  {
+    "title": "Infinite Wall Jump",
+    "name": "infinitewalljump",
+    "tabbed": 2,
+    "linkless": 0
+  },
+  {
+    "title": "Wall Running",
+    "name": "wallrunning",
+    "tabbed": 1,
+    "linkless": 0
+  },
+  {
+    "title": "Zipline",
+    "name": "Zipline",
+    "tabbed": 0,
+    "linkless": 0
+  }, {
+    "title": "Zipline Superjump",
+    "name": "superjump",
+    "tabbed": 1,
+    "linkless": 0
+  },
+  {
+    "title": "Zipline Hyper Jump",
+    "name": "ziplinehyperjump",
+    "tabbed": 1,
+    "linkless": 0
+  },
+  {
+    "title": "Zipline Elite Jump",
+    "name": "elitejump",
+    "tabbed": 1,
+    "linkless": 0
+  },
+  {
+    "title": "Zipline Elite Dismount",
+    "name": "elitedismount",
+    "tabbed": 1,
+    "linkless": 0
+  },
+  {
+    "title": "Superglide",
+    "name": "superglide",
+    "tabbed": 0,
+    "linkless": 0
+  },
+  {
+    "title": "Superglide Wall Jump",
+    "name": "superglidewalljump",
+    "tabbed": 1,
+    "linkless": 0
+  },
+  {
+    "title": "Boopglitch",
+    "name": "boopglitch",
+    "tabbed": 0,
+    "linkless": 0
+  },
+  {
+    "title": "Edgebug",
+    "name": "edgebug",
+    "tabbed": 0,
+    "linkless": 0
+  },{
+  "title": "Edgeboost",
+  "name": "Edgeboost",
+  "tabbed": 0,
+  "linkless": 0
+},
+  {
+    "title": "Pathfinder",
+    "name": "pathfinder",
+    "tabbed": 0,
+    "linkless": 1
+  },
+  {
+    "title": "Grapplehop",
+    "name": "grapplehop",
+    "tabbed": 1,
+    "linkless": 0
+  }, {
+    "title": "Grapple Mini Slingshot",
+    "name": "grappleminislingshot",
+    "tabbed": 1,
+    "linkless": 0
+  }, {
+    "title": "Supergrapple",
+    "name": "supergrapple",
+    "tabbed": 1,
+    "linkless": 0
+  }, {
+    "title": "Grapple Slingshot",
+    "name": "grappleslingshot",
+    "tabbed": 1,
+    "linkless": 0
+  }, {
+    "title": "Flat Ground Grapples",
+    "name": "flatgroundgrapples",
+    "tabbed": 1,
+    "linkless": 0
+  },
+  {
+      "title": "Wattson",
+    "name": "wattson",
+    "tabbed": 0,
+    "linkless": 1
+  },
+    {
+      "title": "Insta Slide",
+    "name": "instaslide",
+    "tabbed": 1,
+    "linkless": 0
+  },
+  {
+    "title": "Wraith",
+    "name": "Wraith",
+    "tabbed": 0,
+    "linkless": 1
+  }, {
+    "title": "Octane",
+    "name": "Octane",
+    "tabbed": 0,
+    "linkless": 1
+  },  {
+    "title": "Jump pad Double Jump",
+    "name": "jumppaddoublejump",
+    "tabbed": 1,
+    "linkless": 0
+  }, {
+    "title": "Entering Jump Pad",
+    "name": "enterjumppad",
+    "tabbed": 1,
+    "linkless": 0
+  }, {
+    "title": "Horizion",
+    "name": "Horizion",
+    "tabbed": 0,
+    "linkless": 1
+  }, {
+    "title": "Passive",
+    "name": "passive",
+    "tabbed": 1,
+    "linkless": 0
+  }, {
+    "title": "Revanant",
+    "name": "Revanant",
+    "tabbed": 0,
+    "linkless": 1
+  }
+]

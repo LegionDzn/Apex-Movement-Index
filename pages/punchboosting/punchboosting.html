@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+
+  <!-- ====================================== -->
+  <title>Punchboosting - Apex Movement Index</title>
+
+
+  <link rel="stylesheet" href="../../css/master.css">
+  <link rel="stylesheet" href="../../css/dark.css">
+  <style>
+    body {
+      background-color: var(--secondary-bg-color)
+    }
+  </style>
+</head>
+
+<body id="bodytoggle" class="light">
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+  <script src="../../js/subpage.js" charset="utf-8"></script>
+  <!-- ====================================== -->
+  <p style="display:inline;" class="header">Punchboosting</p>
+  <p style="color: gray; display:inline; font-size: 1em" class="header">AKA. Melee Boosting</p>
+  <div style="margin-top: 0em;" class="br"></div>
+
+
+
+  <div class="Priflex containerbutbetter">
+    <div class="VidCont">
+      <video class="player" width="100%" height="100%" onmouseover="this.play()" controls loop muted>
+        <source src="punchboost.mp4" type="video/mp4" /> Your browser does not support the video tag.
+      </video>
+    </div>
+
+    <div class="PriText">
+      <h3>Basic Punchboost</h3>
+      <p>
+        Punchboosting is one of the most versatile and widely applicable movement techs in Apex right now. A punch boost can be performed by crouching, holding the BACKWARD input, and meleeing any surface higher than the one you are standing on even
+        if it's by a very small amount.
+        If performed correctly, you should be boosted BACKWARD.
+        <br><br>
+        You can also punch boost without crouching. To do this you must be standing then melee the surface and input a JUMP just after the melee connects with the surface.
+        <br><br>
+        You can also punchboost off certain legend abilities such as: Loba's Black Market, Wattson's Generator, Caustic Traps, Revanant's totem, Lifeline's carepack and heal drone, Mirage decoys, Crypto's drone, and Gibby's bubble.
+      </p>
+    </div>
+  </div>
+  <div class="br"></div>
+  <div class="Priflex containerbutbetter">
+    <div class="VidCont">
+      <video class="player" width="100%" height="100%" onmouseover="this.play()" controls loop muted>
+        <source src="hillpunchboost.mp4" type="video/mp4" /> Your browser does not support the video tag.
+      </video>
+    </div>
+
+    <div class="PriText">
+      <h3>Slope Punchboosting</h3>
+      <p>
+        To punch boost, you must melee a surface that is higher than the one you are on. When on a slope, the nature of the surface allows you to punchboost by just meleeing the ground upslope even if the slope is very shallow. If this slope is large
+        enough, you'll be able to chain these punchboosts to get an extremely large amount of momentum, which is what I do in the video.
+        <br><br>
+        If you do not realize it already, this is basically a better version of sliding down slopes and can be used in the same way. The sope doesn't have to be large, as long as your melee can connect with the ground while looking upslope.
+      </p>
+    </div>
+  </div>
+
+  <div class="br"></div>
+
+  <div class="Priflex containerbutbetter">
+    <div class="VidCont">
+      <video class="player" width="100%" height="100%" onmouseover="this.play()" controls loop muted>
+        <source src="punchboosttapstrafe.mp4" type="video/mp4" /> Your browser does not support the video tag.
+      </video>
+    </div>
+
+    <div class="PriText">
+      <h3>Punchboost Tapstrafe</h3>
+      <p>
+        After exiting a punchboost your momentum can be redirected with a tapstrafe or momentumshift, altohugh the latter notabliy harder.
+        <br><br>
+        I find it easier and more versatile to tapstrafe out of a standing punchboost than a sliding one due to the fact that once jump following the melee you can tapstrafe immidedetly, insted of having to jump out of a slide with the former.
+      </p>
+    </div>
+  </div>
+
+  <div class="br"></div>
+  <div class="Priflex containerbutbetter">
+    <div class="VidCont">
+      <video class="player" width="100%" height="100%" onmouseover="this.play()" controls loop muted>
+        <source src="punchboostcombos.mp4" type="video/mp4" /> Your browser does not support the video tag.
+      </video>
+    </div>
+
+    <div class="PriText">
+      <h3>Unintuitive use cases</h3>
+      <p>
+        This video shows some unintuitive use cases of punchboosting.
+        <br><br>
+        Discriptions of these clips are as follows:
+        <br><br>
+        <p class="tabbed1x">
+
+        Clip 1. Basic superglide into punchboost.
+        <br>
+        Clip 2. Tapstrafe walljump into punchboost.
+        <br>
+        Clip 3. Standing Punchboost into tapstrafe into Fatuige walljump.
+        <br>
+        Clip 4. Punchboosting to cross a otherwise uncrossable gap.
+        <br><br>
+      </p></p>
+    </div>
+  </div>
+
+
+  <script type="text/javascript">
+    document.addEventListener('visibilitychange', function() {
+      if (document.hidden) {
+        console.log('pausing');
+        $("video").each(function() {
+          $(this).get(0).pause();
+        });
+      } else {
+        
+      }
+    }, false);
+    var $allVideos = $('video');
+    $('video').on('play', function(e) {
+      $allVideos.not(this).each(function() {
+        this.pause()
+      })
+    });
+    
+  </script>
+</body>
+
+</html>

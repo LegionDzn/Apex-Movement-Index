@@ -3,124 +3,47 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Apex Movement Index</title>
-
-  <link rel="stylesheet" href="css/master.css">
-  <link rel="stylesheet" href="css/dark.css">
-
-  <script src="js/darkmode.js" charset="utf-8"></script>
-  <script src="js/resize.js" charset="utf-8"></script>
-  <script src="js/search.js" charset="utf-8"></script>
-  <script src="js/switchpage.js" charset="utf-8"></script>
-
+  <title>index - Apex Movement Ind</title>
+  <link rel="stylesheet" href="/css/master.css">
 </head>
 
-<body id="masterlightswitch" class="light">
-  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-  <div id="primarycontainer">
-    <div class="container ToC" id="ToC">
-      <p class="header">APEX MOVEMENT INDEX</p>
+<body>
+  <div id="p_container">
+    <div id="l_container"><iframe src="pages/list.html" width="100%" height="100%"></iframe> </div>
+    <div id="c_container">
+      <p class="heading1">index</p>
       <div class="br"></div>
-      <div class="listcontainer">
-
-        <ul id="TocList">
-          <li class=""><span><a onclick="switchpage('subpages/introduction/introduction.html')" href="#"> Introduction</a></span></li>
-          <li class=""><span><a onclick="switchpage('subpages/director/director.html')" href="#"> Directory</a></span></li>
-
-          <li class=""><span><a onclick="switchpage('subpages/prerequisites/prerequisites.html')" href="#"> Prerequisites</a></span></li>
-          <li class=""><span><a onclick="switchpage('subpages/holstering/holstering.html')" href="#"> Holstering and it's Importance</a></span></li>
-          <br>
-          <p class="subheader">Movement Tech</p>
-          <div class="br"></div>
-          <input class="form-field inverseborder" id="searchbar" autocomplete="off" onkeyup="run_search()" type="text" name="search" placeholder="Search..">
-          <div class="br"></div>
-        </ul>
+      <p class="heading2">XvaHead</p>
+      <div class="c_container_inner">
+        <div class="video_container"> <video src="ducksuperglide.mp4" onmouseover="this.play()" controls loop muted> <video src="ducksuperglide.mp4" onmouseover="this.play()" controls loop muted> </div>
+        <p class="slightlydarker">Apex Legends runs on a heavily modified version of the Titanfall 2's Source engine, which itself is a modification of the Titanfall 1's Source engine. This layered and adapted version of the source engine creates some unintended side effects and glitches, many of which we abuse to gain the upper hand. Many movements techniques abuse these unintended features to allow us to do things the developers never intended.
+    When we use these unintended features to change the way we move about the game world, we call them movement tech, although some of the movement techniques within apex legends are fully intended, many are not, which results in them being very unintuitive. For this reason, I've created Apex Movement Index, a website that attempts to document and catalog the many various movements techniques Within Apex Legends.
+    <br><br>
+    This website is ever-changing and still in development. So there are some incomplete pages. I plan to document all known interactions, techniques, and tricks which pertain to movement in Apex Legends, and perhaps other tips and tricks which may be unintuitive to the average player.
+    <br><br>
+    I know the pages are wordy and not that appealing to the eyes, but I've found that this is the least convoluted way to catalog and explain the tech without using multiple-minute-long videos.</p>
       </div>
-
-      <div class="listcontainer populate"></div>
-
-      <div class="listcontainer">
-        <ul id="TocList">
-          <p class="subheader">Random Stuff</p>
-          <div class="br">
-
-          </div>
-          <li class=""><span><a onclick="switchpage('subpages/bruh/bruh.htm')" href="#"> 360/cm Calculator</a></span></li>
-          <li class="lightswitch"><span><a onclick="ToggleDark()" href="#"> Toggle Dark Mode</a></span></li>
-          <li class=""><span><a onclick="switchpage('subpages/TEMPLATE/TEMPLATE.html')" href="#"> template</a></span></li>
-          <br>
-          <p class="subheader">Removed Tech</p>
-          <div class="br">
-
-          </div>
-          <li class="searchableitem"><span><a onclick="switchpage('subpages/punchboosting/punchboosting.html')" href="#"> Punch Boosting</a></span></li>
-          <div class="br">
-          </div>
-          <li><span>
-              <p>V0.81</p>
-            </span></li>
-          <li><span>
-              <p>Created By Legion#0567</p>
-            </span></li>
-        </ul>
+      <div class="br"></div>
+      <p class="heading2">XvaHead</p>
+      <div class="c_container_inner">
+        <div class="video_container"> <video src="scrollsuperglide.mp4" onmouseover="this.play()" controls loop muted> </div>
+        <p class="slightlydarker">XvaBody</p>
       </div>
-
+      <div class="br"></div>
+      <p class="heading2">XvaHead</p>
+      <div class="c_container_inner">
+        <div class="video_container"> <video src="ducksuperglide.mp4" onmouseover="this.play()" controls loop muted> </div>
+        <p class="slightlydarker">XvaBody</p>
+      </div>
+      <div class="br"></div>
+      <p class="heading2">XvaHead</p>
+      <div class="c_container_inner">
+        <div class="video_container"> <video src="ducksuperglide.mp4" onmouseover="this.play()" controls loop muted> </div>
+        <p class="slightlydarker">XvaBody</p>
+      </div>
+      <div class="br"></div>
     </div>
-    <div id="Main" class="container" style="height: 0px">
-      <iframe id="Iframe" src="subpages/introduction/introduction.html" width="100%" height="min-content;"></iframe>
-    </div>
-    <script type="text/javascript">
-      const output = document.querySelector('.populate');
-      const output1 = document.createElement('div');
-      const ul = document.createElement('ul');
-      output.append(output1);
-      output.append(ul);
-      ul.setAttribute('id', 'TocList');
-
-      ;
-      const url = 'data1.json';
-      window.addEventListener('DOMContentLoaded', () => {
-        loadData();
-      })
-
-      function loadData() {
-        fetch(url).then(rep => rep.json())
-          .then((data) => {
-            //console.log(data);
-            addtoPage(data);
-          })
-      }
-
-      function addtoPage(arr) {
-        arr.forEach((el) => {
-          console.log(el);
-          const li = document.createElement('li');
-          const span = document.createElement('span');
-          const a = document.createElement('a');
-          const p = document.createElement('p');
-
-          var switchpageattr = "switchpage('subpages/" + el.name + "/" + el.name + "." + "html')"
-          console.log(switchpageattr);
-          a.setAttribute("onclick", switchpageattr);
-          a.setAttribute("href", "#");
-          a.textContent = "•" + el.title;
-          p.textContent = "•" + el.title;
-          li.classList.add("tabbed" + el.tabbed);
-          li.classList.add("searchableitem");
-          ul.append(li);
-          li.append(span);
-          if (el.linkless == 1) {
-            span.append(p);
-          } else {
-            span.append(a);
-
-          }
-
-
-        });
-      }
-    </script>
-
+  </div>
 </body>
 
 </html>
