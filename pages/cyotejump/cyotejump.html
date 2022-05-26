@@ -3,8 +3,10 @@
 
 <head>
   <title>Cyote Wall Jump - Apex Movement Index</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
   <meta charset="utf-8">
   <title></title>
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="../../css/master.css">
 </head>
 
@@ -22,7 +24,7 @@
       <div class="br"></div>
       <p class="heading2">XvaHead</p>
       <div class="c_container_inner">
-        <div class="video_container"> <video src="scrollsuperglide.mp4" onmouseover="this.play()" controls loop muted> </div>
+        <div class="video_container"> <video src="cyotejump2.mp4" onmouseover="this.play()" controls loop muted> </div>
         <p class="slightlydarker">XvaBody</p>
       </div>
       <div class="br"></div>
@@ -40,7 +42,25 @@
       <div class="br"></div>
     </div>
   </div>
-<script src="../js/pausecontrolscript.js" charset="utf-8"></script>
+<script type="text/javascript">
+document.addEventListener('visibilitychange', function() {
+  if (document.hidden) {
+    console.log('pausing');
+    $("video").each(function() {
+      $(this).get(0).pause();
+    });
+  } else {
+
+  }
+}, false);
+var $allVideos = $('video');
+$('video').on('play', function(e) {
+  $allVideos.not(this).each(function() {
+    this.pause()
+  })
+});
+
+</script>
  </body>
 
 
