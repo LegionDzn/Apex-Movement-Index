@@ -1,11 +1,11 @@
 @font-face {
   font-family: wikipedia;
-  src: url(../../fonts/georgiai.ttf);
+  src: url(../fonts/georgiai.ttf);
 }
 
 @font-face {
   font-family: verdana;
-  src: url(../../fonts/verdana.ttf);
+  src: url(../fonts/verdana.ttf);
 }
 
 :root {
