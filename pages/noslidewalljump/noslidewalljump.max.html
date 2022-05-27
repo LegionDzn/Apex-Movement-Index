@@ -11,52 +11,56 @@
 
 <body>
   <div id="p_container">
-    <div id="l_container"><iframe src="../list.html" width="100%" height="100%"></iframe></div>
+    <div id="l_container"><iframe src="../list.html" width="100%" height="100%"></iframe> </div>
     <div id="c_container">
       <p class="heading1">No Slide Walljump</p>
       <div class="br"></div>
       <p class="heading2">Sprinting Into a No Slide Wall Jump</p>
       <div class="c_container_inner">
-        <div class="video_container"><video src="noslidewalljump1.mp4" onmouseover="this.play()" controls loop muted><video src="ducksuperglide.mp4" onmouseover="this.play()" controls loop muted></div>
+        <div class="video_container"> <video src="noslidewalljump1.mp4" onmouseover="this.play()" controls loop muted> <video src="ducksuperglide.mp4" onmouseover="this.play()" controls loop muted> </div>
         <p class="slightlydarker">XvaBody</p>
       </div>
       <div class="br"></div>
       <p class="heading2">No Slide Walljump</p>
       <div class="c_container_inner">
-        <div class="video_container"><video src="noslidewalljump2.mp4" onmouseover="this.play()" controls loop muted></div>
+        <div class="video_container"> <video src="noslidewalljump2.mp4" onmouseover="this.play()" controls loop muted> </div>
         <p class="slightlydarker">XvaBody</p>
       </div>
       <div class="br"></div>
       <p class="heading2">XvaHead</p>
       <div class="c_container_inner">
-        <div class="video_container"><video src="ducksuperglide.mp4" onmouseover="this.play()" controls loop muted></div>
+        <div class="video_container"> <video src="ducksuperglide.mp4" onmouseover="this.play()" controls loop muted> </div>
         <p class="slightlydarker">XvaBody</p>
       </div>
       <div class="br"></div>
       <p class="heading2">XvaHead</p>
       <div class="c_container_inner">
-        <div class="video_container"><video src="ducksuperglide.mp4" onmouseover="this.play()" controls loop muted></div>
+        <div class="video_container"> <video src="ducksuperglide.mp4" onmouseover="this.play()" controls loop muted> </div>
         <p class="slightlydarker">XvaBody</p>
       </div>
       <div class="br"></div>
     </div>
   </div>
-  <script type="text/javascript">
-    document.addEventListener('visibilitychange', function() {
-      if (document.hidden) {
-        console.log('pausing');
-        $("video").each(function() {
-          $(this).get(0).pause();
-        });
-      } else {}
-    }, false);
-    var $allVideos = $('video');
-    $('video').on('play', function(e) {
-      $allVideos.not(this).each(function() {
-        this.pause()
-      })
+<script type="text/javascript">
+document.addEventListener('visibilitychange', function() {
+  if (document.hidden) {
+    console.log('pausing');
+    $("video").each(function() {
+      $(this).get(0).pause();
     });
-  </script>
-</body>
+  } else {
+
+  }
+}, false);
+var $allVideos = $('video');
+$('video').on('play', function(e) {
+  $allVideos.not(this).each(function() {
+    this.pause()
+  })
+});
+
+</script>
+ </body>
+
 
 </html>
