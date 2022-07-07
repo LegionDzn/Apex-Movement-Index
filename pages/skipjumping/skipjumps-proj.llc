@@ -1,0 +1,10 @@
+{
+  version: 1,
+  mediaFileName: 'skipjumps.mp4',
+  cutSegments: [
+    {
+      end: 13.612101422387138,
+      name: '',
+    },
+  ],
+}
