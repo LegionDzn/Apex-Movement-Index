@@ -11,48 +11,61 @@
   <div id="p_container">
     <div id="l_container"><iframe src="../list.html" width="100%" height="100%"></iframe> </div>
     <div id="c_container">
-      <p class="heading1">XvaTitle</p>
+      <p class="heading1">Wall Jumping</p>
       <div class="br"></div>
-      <p class="heading2">Wall Jump</p>
+      <p class="heading2">Basic Wall Jump</p>
       <div class="c_container_inner">
         <div class="video_container"> <video src="walljump.mp4" onmouseover="this.play()" controls loop muted> <video src="ducksuperglide.mp4" onmouseover="this.play()" controls loop muted> </div>
-        <p class="slightlydarker">XvaBody</p>
+        <p class="slightlydarker">Wall jumping was the first instance of complex movement tech being discovered in Apex. To perform a basic wall jump, slide jump at a wall, then input JUMP once you contact the wall, this is normally done with a scroll
+          bind to allow ourselves to consistently jump off the wall the instant we contact it. You may have been told to let go of all movement keys before you hit the wall, this is partially correct. As you hit the wall, holding either FORWARD or
+          BACKWARD upon contacting the wall will likely result in a large loss of momentum, but holding LEFT or RIGHT is not detrimental, as long as you're already going in the respective direction. In fact, it's often better to be holding LEFT or
+          RIGHT as you have greater control of your character.</p>
       </div>
       <div class="br"></div>
-      <p class="heading2">Tapstrafe + Wall Jump + Tapstrafe</p>
+      <p class="heading2">Mantle proof Wall Jumps</p>
       <div class="c_container_inner">
-        <div class="video_container"> <video src="tapstrafewalljump.mp4" onmouseover="this.play()" controls loop muted> </div>
-        <p class="slightlydarker">XvaBody</p>
+        <div class="video_container"> <video src="mantelwalljump.mp4" onmouseover="this.play()" controls loop muted> </div>
+        <p class="slightlydarker">This holding of LEFT or RIGHT is necessary when attempting to wall jump off surfaces which we auto-mantle onto. To prevent this auto mantle behavior, you hold LEFT or RIGHT depending on the direction you're going, this will make you unable to mantle, thereby allowing you to wall jump. If you end up manteling the wall, you're likely inputting LEFT or RIGHT too late.</p>
       </div>
       <div class="br"></div>
-      <p class="heading2">Clamber Proof Wall Jump</p>
+      <p class="heading2">Tapstrafing and Wall Jumping</p>
       <div class="c_container_inner">
-        <div class="video_container"> <video src="cwb.mp4" onmouseover="this.play()" controls loop muted> </div>
-        <p class="slightlydarker">XvaBody</p>
+        <div class="video_container"> <video src="tapstrafewb.mp4" onmouseover="this.play()" controls loop muted> </div>
+        <p class="slightlydarker">Successfully executing a wall jump will charge your lurch, this makes wall jumps play very well with tapstrafing. When tapstrafing and wall jumping there are a couple of things that you want to keep in mind.
+          <br>
+          <br>
+
+          For maximum momentum preservation, you wanna hit the wall at a near parallel angle. Although the directional change to achieve this is often done through camera movement + tapstrafing, I also find it useful to use LEFT or RIGHT tapstrafing
+          or BACKWARDS + LEFT or RIGHT tapstrafing for even finer control.
+          <br>
+          <br>
+          If you have to make a sharp tapstrafe out of a wall jump, you may want to begin your tapstrafe in the direction you're traveling then move your camera to the direction you want to go. This is more applicable for angles more than 90 degrees,
+          as often you can't simply look where you want to go and tapstrafe.
+
+        </p>
       </div>
       <div class="br"></div>
     </div>
   </div>
-<script type="text/javascript">
-document.addEventListener('visibilitychange', function() {
-  if (document.hidden) {
-    console.log('pausing');
-    $("video").each(function() {
-      $(this).get(0).pause();
+  <script type="text/javascript">
+    document.addEventListener('visibilitychange', function() {
+      if (document.hidden) {
+        console.log('pausing');
+        $("video").each(function() {
+          $(this).get(0).pause();
+        });
+      } else {
+
+      }
+    }, false);
+    var $allVideos = $('video');
+    $('video').on('play', function(e) {
+      $allVideos.not(this).each(function() {
+        this.pause()
+      })
     });
-  } else {
-
-  }
-}, false);
-var $allVideos = $('video');
-$('video').on('play', function(e) {
-  $allVideos.not(this).each(function() {
-    this.pause()
-  })
-});
-
-</script>
- </body>
+  </script>
+</body>
 
 
 </html>
