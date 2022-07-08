@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Ras Strafe - Apex Movement Index</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="../../css/master.css">
+</head>
+
+<body>
+  <div id="p_container">
+    <div id="l_container"><iframe src="../list.html" width="100%" height="100%"></iframe> </div>
+    <div id="c_container">
+      <p class="heading1">Ras strafe</p>
+      <div class="br"></div>
+      <p class="heading2">Ras Strafing</p>
+      <div class="c_container_inner">
+        <div class="video_container"> <video src="rasstrafe.mp4" onmouseover="this.play()" controls loop muted> <video src="ducksuperglide.mp4" onmouseover="this.play()" controls loop muted> </div>
+        <p class="slightlydarker">Ras strafing is essentially a supercharged momentum shift, as a global rule, you can ras strafe by tapstrafing while pressing the last two inputs in the input order. So as in this video, W>A>>S>D
+<br><br>
+In the video the input order goes as such:
+1.W>A>(Start Tapstrafing)>S>D
+2.W>D>(Start Tapstrafing)>S>A
+<br><br>
+You can also see that I move my camera a bit during the ras strafe, this is to make the tapstrafe more powerful, thereby allowing a tighter ras strafe.</p>
+      </div>
+      <div class="br"></div>
+      <p class="heading2">Fatuge Wall Jumping + Ras Strafe</p>
+      <div class="c_container_inner">
+        <div class="video_container"> <video src="raswj.mp4" onmouseover="this.play()" controls loop muted> </div>
+        <p class="slightlydarker">A ras strafe can be done out of a fatigue wall bounce, allowing for a creative and unexpected peek. A ras strafe can also be done out of a standard wall jump (as seen in the latter clip), but I don't find it as useful due to the need for a run-up.</p>
+      </div>
+      <div class="br"></div>
+      <p class="heading2">Jumppad + Ras Strafe</p>
+      <div class="c_container_inner">
+        <div class="video_container"> <video src="jumppadras.mp4" onmouseover="this.play()" controls loop muted> </div>
+        <p class="slightlydarker">XvaBody</p>
+      </div>
+      <div class="br"></div>
+
+    </div>
+  </div>
+<script type="text/javascript">
+document.addEventListener('visibilitychange', function() {
+  if (document.hidden) {
+    console.log('pausing');
+    $("video").each(function() {
+      $(this).get(0).pause();
+    });
+  } else {
+
+  }
+}, false);
+var $allVideos = $('video');
+$('video').on('play', function(e) {
+  $allVideos.not(this).each(function() {
+    this.pause()
+  })
+});
+
+</script>
+ </body>
+
+
+</html>

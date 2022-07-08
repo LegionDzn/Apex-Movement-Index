@@ -54,7 +54,7 @@
   },
   {
     "title": "Slide Hopping",
-    "name": "slidehopping",
+    "name": "slidehop",
     "tabbed": 1,
     "linkless": 0
   },
@@ -73,6 +73,18 @@
   {
     "title": "Redirecting",
     "name": "redirecting",
+    "tabbed": 1,
+    "linkless": 0
+  },
+  {
+    "title": "Pito Strafe",
+    "name": "pitostrafe",
+    "tabbed": 1,
+    "linkless": 0
+  },
+  {
+    "title": "Ras Strafe",
+    "name": "rasstrafe",
     "tabbed": 1,
     "linkless": 0
   },

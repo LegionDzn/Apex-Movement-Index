@@ -16,6 +16,7 @@
   --br-color: #666666;
   --link-color: #6a7da7;
   --notquitewhite: #b8b8b8;
+  --videoscalefactor: .4;
 }
 span{
   display: block;
@@ -107,14 +108,14 @@ a:hover{
 
 .video_container {
   border: 1px solid var(--border-color);
-  width: calc(1920px * .3);
-  height: calc(1080px * .3);
+  width: calc(1920px *  var(--videoscalefactor));
+  height: calc(1080px * var(--videoscalefactor));
   float: right;
 }
 
 .c_container_inner {
   margin-bottom: 5px;
-  min-height: calc(1080px * .3);
+  min-height: calc(1080px * var(--videoscalefactor));
 }
 
 #l_container {
